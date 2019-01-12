@@ -1,0 +1,10 @@
+.app {
+  text-align: center;
+  height: 100vh;
+  font-size: calc(10px + 2.5vmin);
+  color: white;
+
+  &__header {
+    justify-content: center;
+  }
+}

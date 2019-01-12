@@ -1,18 +1,16 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 
 const App = () => (
-  <div className="App">
-    <header className="App-header">
-      <a
-        className="App-link"
-        href="https://reactjs.org"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Learn React
-      </a>
+  <div className="app">
+    <header className="app__header row">
+      <h1>Experience Finder</h1>
     </header>
+    <main className="row center-xs">
+      <div className="col-xs-6">
+        <input placeholder="batata" />
+      </div>
+    </main>
   </div>
 );
 
