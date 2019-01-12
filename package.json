@@ -29,6 +29,7 @@
     "he": "^1.2.0",
     "html-webpack-plugin": "4.0.0-alpha.2",
     "identity-obj-proxy": "3.0.0",
+    "lodash": "^4.17.11",
     "mini-css-extract-plugin": "0.4.3",
     "node-sass": "^4.11.0",
     "optimize-css-assets-webpack-plugin": "5.0.1",

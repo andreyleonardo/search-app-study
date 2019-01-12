@@ -1,3 +1,5 @@
 serviceWorker.js
 setupTests.js
 nightwatch.conf.js
+config/
+scripts/

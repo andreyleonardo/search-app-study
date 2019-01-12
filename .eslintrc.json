@@ -16,7 +16,8 @@
   ],
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-    "comma-dangle": 0
+    "comma-dangle": 0,
+    "class-methods-use-this": 0
   },
   "globals": {
     "it": true,
