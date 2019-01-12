@@ -1,9 +1,114 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders without crashing 1`] = `
+exports[`App renders without crashing 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__unrendered__): <App
+    data={
+      Object {
+        "tours": Array [
+          Object {
+            "currency": "$",
+            "isSpecialOffer": false,
+            "price": "14",
+            "rating": "4.8",
+            "title": "German Tour: Parliament Quarter &amp; Reichstag glass dome",
+          },
+          Object {
+            "currency": "$",
+            "isSpecialOffer": false,
+            "price": "21",
+            "rating": "4.8",
+            "title": "Skip the Line: Pergamon Museum Berlin Tickets",
+          },
+          Object {
+            "currency": "$",
+            "isSpecialOffer": false,
+            "price": "10",
+            "rating": "4.6",
+            "title": "Berlin WelcomeCard: Transport, Discounts &amp; Guide Book",
+          },
+          Object {
+            "currency": "$",
+            "isSpecialOffer": false,
+            "price": "143",
+            "rating": "4.6",
+            "title": "Skip the Line: Berlin TV Tower Ticket",
+          },
+          Object {
+            "currency": "$",
+            "isSpecialOffer": false,
+            "price": "14",
+            "rating": "4.5",
+            "title": "1-Hour City Tour by Boat with Guaranteed Seating",
+          },
+          Object {
+            "currency": "$",
+            "isSpecialOffer": false,
+            "price": "210",
+            "rating": "4.3",
+            "title": "Berlin Hop-on Hop-off Bus Tour: 1- or 2-Day Ticket",
+          },
+          Object {
+            "currency": "$",
+            "isSpecialOffer": false,
+            "price": "59",
+            "rating": "4.8",
+            "title": "German Tour: Reichstag with Plenary Chamber &amp; Cuppola",
+          },
+          Object {
+            "currency": "$",
+            "isSpecialOffer": true,
+            "price": "41",
+            "rating": "4.5",
+            "title": "Berlin: 2.5-Hour Boat Tour Along the River Spree",
+          },
+          Object {
+            "currency": "$",
+            "isSpecialOffer": false,
+            "price": "14",
+            "rating": "4.5",
+            "title": "Museum Pass Berlin: 3-Day Entry to Over 40 Top Museums",
+          },
+          Object {
+            "currency": "$",
+            "isSpecialOffer": true,
+            "price": "50",
+            "rating": "4.6",
+            "title": "Reichstag: Rooftop Coffee Break at Käfer",
+          },
+          Object {
+            "currency": "$",
+            "isSpecialOffer": true,
+            "price": "46",
+            "rating": "4.9",
+            "title": "Skip the Line: Neues Museum Berlin Tickets",
+          },
+          Object {
+            "currency": "$",
+            "isSpecialOffer": false,
+            "price": "87",
+            "rating": "4.8",
+            "title": "German Tour: Reichstag with dome Chamber &amp;",
+          },
+          Object {
+            "currency": "$",
+            "isSpecialOffer": false,
+            "price": "8",
+            "rating": "4.3",
+            "title": "Berlin Hop-on Hop-off Bus Tour with Live Commentary",
+          },
+          Object {
+            "currency": "$",
+            "isSpecialOffer": false,
+            "price": "140",
+            "rating": "4.5",
+            "title": "Skip the Line: TV Tower Early Bird Tickets",
+          },
+        ],
+      }
+    }
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -19,22 +124,21 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <header
-          className="app__header row"
+          className="app__header"
         >
           <h1>
             Experience Finder
           </h1>
         </header>,
         <main
-          className="row center-xs"
+          className="app__main row center-xs"
         >
+          <SearchBar
+            onChange={[Function]}
+          />
           <div
-            className="col-xs-6"
-          >
-            <input
-              placeholder="batata"
-            />
-          </div>
+            className="col-xs-12"
+          />
         </main>,
       ],
       "className": "app",
@@ -49,7 +153,7 @@ ShallowWrapper {
           "children": <h1>
             Experience Finder
           </h1>,
-          "className": "app__header row",
+          "className": "app__header",
         },
         "ref": null,
         "rendered": Object {
@@ -70,40 +174,42 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <div
-            className="col-xs-6"
-          >
-            <input
-              placeholder="batata"
-            />
-          </div>,
-          "className": "row center-xs",
+          "children": Array [
+            <SearchBar
+              onChange={[Function]}
+            />,
+            <div
+              className="col-xs-12"
+            />,
+          ],
+          "className": "app__main row center-xs",
         },
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": <input
-              placeholder="batata"
-            />,
-            "className": "col-xs-6",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "onChange": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
           },
-          "ref": null,
-          "rendered": Object {
+          Object {
             "instance": null,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "placeholder": "batata",
+              "children": Array [],
+              "className": "col-xs-12",
             },
             "ref": null,
-            "rendered": null,
-            "type": "input",
+            "rendered": Array [],
+            "type": "div",
           },
-          "type": "div",
-        },
+        ],
         "type": "main",
       },
     ],
@@ -117,22 +223,21 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <header
-            className="app__header row"
+            className="app__header"
           >
             <h1>
               Experience Finder
             </h1>
           </header>,
           <main
-            className="row center-xs"
+            className="app__main row center-xs"
           >
+            <SearchBar
+              onChange={[Function]}
+            />
             <div
-              className="col-xs-6"
-            >
-              <input
-                placeholder="batata"
-              />
-            </div>
+              className="col-xs-12"
+            />
           </main>,
         ],
         "className": "app",
@@ -147,7 +252,7 @@ ShallowWrapper {
             "children": <h1>
               Experience Finder
             </h1>,
-            "className": "app__header row",
+            "className": "app__header",
           },
           "ref": null,
           "rendered": Object {
@@ -168,40 +273,42 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <div
-              className="col-xs-6"
-            >
-              <input
-                placeholder="batata"
-              />
-            </div>,
-            "className": "row center-xs",
+            "children": Array [
+              <SearchBar
+                onChange={[Function]}
+              />,
+              <div
+                className="col-xs-12"
+              />,
+            ],
+            "className": "app__main row center-xs",
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <input
-                placeholder="batata"
-              />,
-              "className": "col-xs-6",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "onChange": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
             },
-            "ref": null,
-            "rendered": Object {
+            Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "placeholder": "batata",
+                "children": Array [],
+                "className": "col-xs-12",
               },
               "ref": null,
-              "rendered": null,
-              "type": "input",
+              "rendered": Array [],
+              "type": "div",
             },
-            "type": "div",
-          },
+          ],
           "type": "main",
         },
       ],

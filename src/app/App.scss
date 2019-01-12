@@ -1,10 +1,24 @@
+$header_size:110px;
+
 .app {
   text-align: center;
-  height: 100vh;
-  font-size: calc(10px + 2.5vmin);
+  height: 100%;
+  font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
   color: white;
+  overflow: hidden;
+  overflow-y: auto;
 
   &__header {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    height: $header_size;
+    width: 100%;
     justify-content: center;
+  }
+
+  &__main {
+    margin: 120px 0 50px 0;
   }
 }

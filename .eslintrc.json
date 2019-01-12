@@ -23,6 +23,12 @@
     "expect": true,
     "render": true,
     "shallow": true,
-    "mount": true
+    "mount": true,
+    "describe": true,
+    "beforeEach": true,
+    "beforeAll": true,
+    "afterEach": true,
+    "afterAll": true,
+    "jest": true
   }
 }
