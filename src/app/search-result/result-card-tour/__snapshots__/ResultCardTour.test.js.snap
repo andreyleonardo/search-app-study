@@ -6,8 +6,10 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <ResultCardTour
     currency="$"
     isSpecialOffer={false}
+    onClick={[MockFunction]}
     price="30"
     rating="4.8"
+    tabIndex={1}
     title="Tour Title"
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -36,6 +38,10 @@ ShallowWrapper {
         <p />,
       ],
       "className": "result_card_tour",
+      "onClick": [MockFunction],
+      "onKeyPress": [MockFunction],
+      "role": "button",
+      "tabIndex": 1,
     },
     "ref": null,
     "rendered": Array [
@@ -105,6 +111,10 @@ ShallowWrapper {
           <p />,
         ],
         "className": "result_card_tour",
+        "onClick": [MockFunction],
+        "onKeyPress": [MockFunction],
+        "role": "button",
+        "tabIndex": 1,
       },
       "ref": null,
       "rendered": Array [

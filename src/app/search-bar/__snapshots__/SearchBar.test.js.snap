@@ -19,22 +19,53 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <div>
-        <label
-          htmlFor="search-input-id"
-        >
-          <input
-            className="search_bar__input"
-            id="search-input-id"
-            onChange={[MockFunction]}
-            placeholder="Let's find a great experience"
-          />
-        </label>
-      </div>,
-      "className": "search_bar col-xs-12 col-sm-6",
+      "children": <label
+        htmlFor="search-input-id"
+      >
+        <input
+          className="search_bar__input"
+          id="search-input-id"
+          onChange={[MockFunction]}
+          placeholder="Let's find a great experience"
+        />
+      </label>,
+      "className": "search_bar",
     },
     "ref": null,
     "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <input
+          className="search_bar__input"
+          id="search-input-id"
+          onChange={[MockFunction]}
+          placeholder="Let's find a great experience"
+        />,
+        "htmlFor": "search-input-id",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "search_bar__input",
+          "id": "search-input-id",
+          "onChange": [MockFunction],
+          "placeholder": "Let's find a great experience",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "input",
+      },
+      "type": "label",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
       "instance": null,
       "key": undefined,
       "nodeType": "host",
@@ -49,6 +80,7 @@ ShallowWrapper {
             placeholder="Let's find a great experience"
           />
         </label>,
+        "className": "search_bar",
       },
       "ref": null,
       "rendered": Object {
@@ -80,80 +112,6 @@ ShallowWrapper {
           "type": "input",
         },
         "type": "label",
-      },
-      "type": "div",
-    },
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <div>
-          <label
-            htmlFor="search-input-id"
-          >
-            <input
-              className="search_bar__input"
-              id="search-input-id"
-              onChange={[MockFunction]}
-              placeholder="Let's find a great experience"
-            />
-          </label>
-        </div>,
-        "className": "search_bar col-xs-12 col-sm-6",
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": <label
-            htmlFor="search-input-id"
-          >
-            <input
-              className="search_bar__input"
-              id="search-input-id"
-              onChange={[MockFunction]}
-              placeholder="Let's find a great experience"
-            />
-          </label>,
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": <input
-              className="search_bar__input"
-              id="search-input-id"
-              onChange={[MockFunction]}
-              placeholder="Let's find a great experience"
-            />,
-            "htmlFor": "search-input-id",
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "className": "search_bar__input",
-              "id": "search-input-id",
-              "onChange": [MockFunction],
-              "placeholder": "Let's find a great experience",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "input",
-          },
-          "type": "label",
-        },
-        "type": "div",
       },
       "type": "div",
     },

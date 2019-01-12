@@ -11,6 +11,7 @@ ShallowWrapper {
         "title": "My Title",
       }
     }
+    tabIndex={0}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -25,75 +26,39 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <div
-        className="col-xs-12 col-sm-7"
-      >
-        <ResultCardTour
-          currency="$"
-          isSpecialOffer={false}
-          price="30"
-          rating="0"
-          title="My Title"
-        />
-      </div>,
-      "className": "row center-xs",
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <ResultCardTour
-          currency="$"
-          isSpecialOffer={false}
-          price="30"
-          rating="0"
-          title="My Title"
-        />,
-        "className": "col-xs-12 col-sm-7",
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "currency": "$",
-          "isSpecialOffer": false,
-          "price": "30",
-          "rating": "0",
-          "title": "My Title",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      "type": "div",
-    },
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <div
+      "children": Array [
+        <div
           className="col-xs-12 col-sm-7"
         >
           <ResultCardTour
             currency="$"
             isSpecialOffer={false}
+            onClick={[Function]}
             price="30"
             rating="0"
+            tabIndex={0}
             title="My Title"
           />
         </div>,
-        "className": "row center-xs",
-      },
-      "ref": null,
-      "rendered": Object {
+        <div
+          className="col-xs-12 col-sm-7"
+        >
+          <ResultDetailsTour
+            currency="$"
+            expand={false}
+            isSpecialOffer={false}
+            price="30"
+            rating="0"
+            tabIndex={0}
+            title="My Title"
+          />
+        </div>,
+      ],
+      "className": "row center-xs",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
@@ -101,8 +66,10 @@ ShallowWrapper {
           "children": <ResultCardTour
             currency="$"
             isSpecialOffer={false}
+            onClick={[Function]}
             price="30"
             rating="0"
+            tabIndex={0}
             title="My Title"
           />,
           "className": "col-xs-12 col-sm-7",
@@ -115,8 +82,10 @@ ShallowWrapper {
           "props": Object {
             "currency": "$",
             "isSpecialOffer": false,
+            "onClick": [Function],
             "price": "30",
             "rating": "0",
+            "tabIndex": 0,
             "title": "My Title",
           },
           "ref": null,
@@ -125,6 +94,156 @@ ShallowWrapper {
         },
         "type": "div",
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <ResultDetailsTour
+            currency="$"
+            expand={false}
+            isSpecialOffer={false}
+            price="30"
+            rating="0"
+            tabIndex={0}
+            title="My Title"
+          />,
+          "className": "col-xs-12 col-sm-7",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "currency": "$",
+            "expand": false,
+            "isSpecialOffer": false,
+            "price": "30",
+            "rating": "0",
+            "tabIndex": 0,
+            "title": "My Title",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="col-xs-12 col-sm-7"
+          >
+            <ResultCardTour
+              currency="$"
+              isSpecialOffer={false}
+              onClick={[Function]}
+              price="30"
+              rating="0"
+              tabIndex={0}
+              title="My Title"
+            />
+          </div>,
+          <div
+            className="col-xs-12 col-sm-7"
+          >
+            <ResultDetailsTour
+              currency="$"
+              expand={false}
+              isSpecialOffer={false}
+              price="30"
+              rating="0"
+              tabIndex={0}
+              title="My Title"
+            />
+          </div>,
+        ],
+        "className": "row center-xs",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <ResultCardTour
+              currency="$"
+              isSpecialOffer={false}
+              onClick={[Function]}
+              price="30"
+              rating="0"
+              tabIndex={0}
+              title="My Title"
+            />,
+            "className": "col-xs-12 col-sm-7",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "currency": "$",
+              "isSpecialOffer": false,
+              "onClick": [Function],
+              "price": "30",
+              "rating": "0",
+              "tabIndex": 0,
+              "title": "My Title",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <ResultDetailsTour
+              currency="$"
+              expand={false}
+              isSpecialOffer={false}
+              price="30"
+              rating="0"
+              tabIndex={0}
+              title="My Title"
+            />,
+            "className": "col-xs-12 col-sm-7",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "currency": "$",
+              "expand": false,
+              "isSpecialOffer": false,
+              "price": "30",
+              "rating": "0",
+              "tabIndex": 0,
+              "title": "My Title",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "div",
+        },
+      ],
       "type": "div",
     },
   ],

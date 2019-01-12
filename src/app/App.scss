@@ -3,14 +3,12 @@ $header_size:110px;
 .app {
   text-align: center;
   height: 100%;
-  font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
-  color: white;
   overflow: hidden;
   overflow-y: auto;
 
   &__header {
     overflow: hidden;
-    background-color: #333;
+    background-color: white;
     position: fixed;
     top: 0;
     height: $header_size;
@@ -19,6 +17,23 @@ $header_size:110px;
   }
 
   &__main {
-    margin: 120px 0 50px 0;
+    margin: 110px 0 50px 0;
+  }
+
+  &__background {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__background_image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__search_bar {
+    margin-top: 25px;
   }
 }

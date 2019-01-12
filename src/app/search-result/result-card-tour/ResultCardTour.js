@@ -4,9 +4,15 @@ import PropTypes from 'prop-types';
 import './ResultCardTour.scss';
 
 const ResultCardTour = ({
-  title, rating, currency, price, isSpecialOffer
+  title, rating, currency, price, isSpecialOffer, onClick, tabIndex
 }) => (
-  <div className="result_card_tour">
+  <div
+    className="result_card_tour"
+    role="button"
+    onKeyPress={onClick}
+    onClick={onClick}
+    tabIndex={tabIndex}
+  >
     <p>{he.decode(title)}</p>
     <p>{rating}</p>
     <p>{currency + price}</p>
@@ -19,7 +25,9 @@ ResultCardTour.propTypes = {
   rating: PropTypes.string,
   currency: PropTypes.string.isRequired,
   price: PropTypes.string.isRequired,
-  isSpecialOffer: PropTypes.bool
+  isSpecialOffer: PropTypes.bool,
+  onClick: PropTypes.func.isRequired,
+  tabIndex: PropTypes.number.isRequired
 };
 
 ResultCardTour.defaultProps = {
