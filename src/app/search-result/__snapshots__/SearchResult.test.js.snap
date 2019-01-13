@@ -4,6 +4,7 @@ exports[`Search Result renders without crashing 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <SearchResult
+    index={0}
     result={
       Object {
         "currency": "$",
@@ -33,6 +34,8 @@ ShallowWrapper {
         >
           <ResultCardTour
             currency="$"
+            imgAlt="Photo by Vladimir Kudinov on Unsplash"
+            imgSrc="vladimir-kudinov-58771-unsplash.jpeg"
             isSpecialOffer={false}
             onClick={[Function]}
             price="30"
@@ -62,6 +65,8 @@ ShallowWrapper {
         "props": Object {
           "children": <ResultCardTour
             currency="$"
+            imgAlt="Photo by Vladimir Kudinov on Unsplash"
+            imgSrc="vladimir-kudinov-58771-unsplash.jpeg"
             isSpecialOffer={false}
             onClick={[Function]}
             price="30"
@@ -78,6 +83,8 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "currency": "$",
+            "imgAlt": "Photo by Vladimir Kudinov on Unsplash",
+            "imgSrc": "vladimir-kudinov-58771-unsplash.jpeg",
             "isSpecialOffer": false,
             "onClick": [Function],
             "price": "30",
@@ -132,6 +139,8 @@ ShallowWrapper {
           >
             <ResultCardTour
               currency="$"
+              imgAlt="Photo by Vladimir Kudinov on Unsplash"
+              imgSrc="vladimir-kudinov-58771-unsplash.jpeg"
               isSpecialOffer={false}
               onClick={[Function]}
               price="30"
@@ -161,6 +170,8 @@ ShallowWrapper {
           "props": Object {
             "children": <ResultCardTour
               currency="$"
+              imgAlt="Photo by Vladimir Kudinov on Unsplash"
+              imgSrc="vladimir-kudinov-58771-unsplash.jpeg"
               isSpecialOffer={false}
               onClick={[Function]}
               price="30"
@@ -177,6 +188,8 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "currency": "$",
+              "imgAlt": "Photo by Vladimir Kudinov on Unsplash",
+              "imgSrc": "vladimir-kudinov-58771-unsplash.jpeg",
               "isSpecialOffer": false,
               "onClick": [Function],
               "price": "30",

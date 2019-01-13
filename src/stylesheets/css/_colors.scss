@@ -1,11 +1,19 @@
 $primary: #1a2b49;
 $secondary: #1593ff;
-$highlight: #ff8c41;
+$red: #db1a1a;
+$orange: #ff8c41;
+$yellow: #ffe11f;
+$blue: #25a4f8;
+$green: #3dc267;
 
 :export {
-  $primary: $primary;
-  $secondary: $secondary;
-  $highlight: $highlight;
-  $black: #000;
-  $white: #FFF;
+  primary: $primary;
+  secondary: $secondary;
+  red: $red;
+  orange: $orange;
+  yellow: $yellow;
+  blue: $blue;
+  green: $green;
+  black: #000;
+  white: #FFF;
 }

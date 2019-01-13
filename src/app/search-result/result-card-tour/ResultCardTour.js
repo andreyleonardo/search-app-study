@@ -6,7 +6,7 @@ import Ratings from '../../ratings/Ratings';
 import './ResultCardTour.scss';
 
 const ResultCardTour = ({
-  title, rating, currency, price, isSpecialOffer, onClick, tabIndex
+  title, rating, currency, price, isSpecialOffer, onClick, tabIndex, imgSrc, imgAlt
 }) => (
   <div
     id={`result_card_tour-id-${tabIndex}`}
@@ -17,7 +17,7 @@ const ResultCardTour = ({
     tabIndex={tabIndex}
   >
     <div className="result_card_tour__picture col-xs-12 col-sm-3">
-      <img className="result_card_tour__img" src="https://picsum.photos/400/200?image=10" alt="Tour" />
+      <img className="result_card_tour__img" src={imgSrc} alt={imgAlt} />
     </div>
     <div className="result_card_tour__details col-xs-12 col-sm">
       <div className="row start-xs">
@@ -47,12 +47,16 @@ ResultCardTour.propTypes = {
   price: PropTypes.string.isRequired,
   isSpecialOffer: PropTypes.bool,
   onClick: PropTypes.func.isRequired,
-  tabIndex: PropTypes.number.isRequired
+  tabIndex: PropTypes.number.isRequired,
+  imgAlt: PropTypes.string,
+  imgSrc: PropTypes.string
 };
 
 ResultCardTour.defaultProps = {
   rating: 0,
-  isSpecialOffer: false
+  isSpecialOffer: false,
+  imgAlt: '',
+  imgSrc: ''
 };
 
 export default ResultCardTour;

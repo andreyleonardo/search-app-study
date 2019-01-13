@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import ResultCardTour from './result-card-tour/ResultCardTour';
 import ResultDetailsTour from './result-details-tour/ResultDetailsTour';
+import pictures from '../../pictures';
+
 import './SearchResult.scss';
 
 const descriptionStub = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
@@ -29,7 +31,8 @@ class SearchResult extends Component {
         price,
         isSpecialOffer,
       },
-      tabIndex
+      tabIndex,
+      index
     } = this.props;
     const { showDetails } = this.state;
 
@@ -44,6 +47,8 @@ class SearchResult extends Component {
             isSpecialOffer={isSpecialOffer}
             onClick={this.showDetails}
             tabIndex={tabIndex}
+            imgSrc={pictures[index].img}
+            imgAlt={pictures[index].credits}
           />
         </div>
         <div className="col-xs-12 col-sm-7">
@@ -66,11 +71,13 @@ SearchResult.propTypes = {
     price: PropTypes.string.isRequired,
     isSpecialOffer: PropTypes.bool
   }).isRequired,
-  tabIndex: PropTypes.number
+  tabIndex: PropTypes.number,
+  index: PropTypes.number
 };
 
 SearchResult.defaultProps = {
-  tabIndex: 0
+  tabIndex: 0,
+  index: 0
 };
 
 export default SearchResult;

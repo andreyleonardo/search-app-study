@@ -5,6 +5,8 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ResultCardTour
     currency="$"
+    imgAlt=""
+    imgSrc=""
     isSpecialOffer={true}
     onClick={[MockFunction]}
     price="30"
@@ -30,9 +32,9 @@ ShallowWrapper {
           className="result_card_tour__picture col-xs-12 col-sm-3"
         >
           <img
-            alt="Tour"
+            alt=""
             className="result_card_tour__img"
-            src="https://picsum.photos/400/200?image=10"
+            src=""
           />
         </div>,
         <div
@@ -95,9 +97,9 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": <img
-            alt="Tour"
+            alt=""
             className="result_card_tour__img"
-            src="https://picsum.photos/400/200?image=10"
+            src=""
           />,
           "className": "result_card_tour__picture col-xs-12 col-sm-3",
         },
@@ -107,9 +109,9 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "alt": "Tour",
+            "alt": "",
             "className": "result_card_tour__img",
-            "src": "https://picsum.photos/400/200?image=10",
+            "src": "",
           },
           "ref": null,
           "rendered": null,
@@ -354,9 +356,9 @@ ShallowWrapper {
             className="result_card_tour__picture col-xs-12 col-sm-3"
           >
             <img
-              alt="Tour"
+              alt=""
               className="result_card_tour__img"
-              src="https://picsum.photos/400/200?image=10"
+              src=""
             />
           </div>,
           <div
@@ -419,9 +421,9 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": <img
-              alt="Tour"
+              alt=""
               className="result_card_tour__img"
-              src="https://picsum.photos/400/200?image=10"
+              src=""
             />,
             "className": "result_card_tour__picture col-xs-12 col-sm-3",
           },
@@ -431,9 +433,9 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "alt": "Tour",
+              "alt": "",
               "className": "result_card_tour__img",
-              "src": "https://picsum.photos/400/200?image=10",
+              "src": "",
             },
             "ref": null,
             "rendered": null,
@@ -693,6 +695,8 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ResultCardTour
     currency="$"
+    imgAlt=""
+    imgSrc=""
     isSpecialOffer={false}
     onClick={[MockFunction]}
     price="30"
@@ -718,9 +722,9 @@ ShallowWrapper {
           className="result_card_tour__picture col-xs-12 col-sm-3"
         >
           <img
-            alt="Tour"
+            alt=""
             className="result_card_tour__img"
-            src="https://picsum.photos/400/200?image=10"
+            src=""
           />
         </div>,
         <div
@@ -778,9 +782,9 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": <img
-            alt="Tour"
+            alt=""
             className="result_card_tour__img"
-            src="https://picsum.photos/400/200?image=10"
+            src=""
           />,
           "className": "result_card_tour__picture col-xs-12 col-sm-3",
         },
@@ -790,9 +794,9 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "alt": "Tour",
+            "alt": "",
             "className": "result_card_tour__img",
-            "src": "https://picsum.photos/400/200?image=10",
+            "src": "",
           },
           "ref": null,
           "rendered": null,
@@ -1012,9 +1016,9 @@ ShallowWrapper {
             className="result_card_tour__picture col-xs-12 col-sm-3"
           >
             <img
-              alt="Tour"
+              alt=""
               className="result_card_tour__img"
-              src="https://picsum.photos/400/200?image=10"
+              src=""
             />
           </div>,
           <div
@@ -1072,9 +1076,9 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": <img
-              alt="Tour"
+              alt=""
               className="result_card_tour__img"
-              src="https://picsum.photos/400/200?image=10"
+              src=""
             />,
             "className": "result_card_tour__picture col-xs-12 col-sm-3",
           },
@@ -1084,9 +1088,9 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "alt": "Tour",
+              "alt": "",
               "className": "result_card_tour__img",
-              "src": "https://picsum.photos/400/200?image=10",
+              "src": "",
             },
             "ref": null,
             "rendered": null,

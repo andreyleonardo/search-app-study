@@ -77,7 +77,12 @@ class App extends Component {
           ) : (
             <section className="app__search_results col-xs-12">
               { results.map((result, index) => (
-                <SearchResult key={result.title} result={result} tabIndex={index + 1} />
+                <SearchResult
+                  key={result.title}
+                  result={result}
+                  index={index}
+                  tabIndex={index + 1}
+                />
               )) }
             </section>
           )}
