@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import SearchBar from './search-bar/SearchBar';
 import SearchResult from './search-result/SearchResult';
 import stubData from '../data.json';
-import backgroundImage from '../stylesheets/img/app_background_image.jpeg';
+import { backgroundImage } from '../pictures';
 import './App.scss';
 
 const MIN_QUERY_SIZE = 3;

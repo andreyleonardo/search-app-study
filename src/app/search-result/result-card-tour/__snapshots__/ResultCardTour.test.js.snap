@@ -1,695 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Result Card Tour renders Special Offer text when isSpecialOffer is true 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ResultCardTour
-    currency="$"
-    imgAlt=""
-    imgSrc=""
-    isSpecialOffer={true}
-    onClick={[MockFunction]}
-    price="30"
-    rating={4.8}
-    tabIndex={1}
-    title="Tour Title"
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": Array [
-        <picture
-          className="result_card_tour__picture col-xs-12 col-sm-3"
-        >
-          <img
-            alt=""
-            className="result_card_tour__img"
-            src=""
-          />
-        </picture>,
-        <div
-          className="result_card_tour__details col-xs-12 col-sm"
-        >
-          <section
-            className="row start-xs"
-          >
-            <div
-              className="col-xs-12"
-            >
-              <span>
-                Tour Title
-              </span>
-            </div>
-          </section>
-          <section
-            className="row between-xs middle-xs"
-          >
-            <div
-              className="result_card_tour__rating col-xs-4 col-sm"
-            >
-              <Ratings
-                rating={4.8}
-              >
-                <span>
-                  4.8/5
-                </span>
-              </Ratings>
-            </div>
-            <div
-              className="result_card_tour__pricing col-xs col-sm"
-            >
-              <span
-                className="result_card_tour__special_offer"
-              >
-                Special Offer
-              </span>
-              <span
-                className="result_card_tour__price"
-              >
-                $30
-              </span>
-            </div>
-          </section>
-        </div>,
-      ],
-      "className": "result_card_tour row",
-      "id": "result_card_tour-id-1",
-      "onClick": [MockFunction],
-      "onKeyPress": [MockFunction],
-      "role": "button",
-      "tabIndex": 1,
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": <img
-            alt=""
-            className="result_card_tour__img"
-            src=""
-          />,
-          "className": "result_card_tour__picture col-xs-12 col-sm-3",
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "alt": "",
-            "className": "result_card_tour__img",
-            "src": "",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "img",
-        },
-        "type": "picture",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <section
-              className="row start-xs"
-            >
-              <div
-                className="col-xs-12"
-              >
-                <span>
-                  Tour Title
-                </span>
-              </div>
-            </section>,
-            <section
-              className="row between-xs middle-xs"
-            >
-              <div
-                className="result_card_tour__rating col-xs-4 col-sm"
-              >
-                <Ratings
-                  rating={4.8}
-                >
-                  <span>
-                    4.8/5
-                  </span>
-                </Ratings>
-              </div>
-              <div
-                className="result_card_tour__pricing col-xs col-sm"
-              >
-                <span
-                  className="result_card_tour__special_offer"
-                >
-                  Special Offer
-                </span>
-                <span
-                  className="result_card_tour__price"
-                >
-                  $30
-                </span>
-              </div>
-            </section>,
-          ],
-          "className": "result_card_tour__details col-xs-12 col-sm",
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <div
-                className="col-xs-12"
-              >
-                <span>
-                  Tour Title
-                </span>
-              </div>,
-              "className": "row start-xs",
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <span>
-                  Tour Title
-                </span>,
-                "className": "col-xs-12",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Tour Title",
-                },
-                "ref": null,
-                "rendered": "Tour Title",
-                "type": "span",
-              },
-              "type": "div",
-            },
-            "type": "section",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <div
-                  className="result_card_tour__rating col-xs-4 col-sm"
-                >
-                  <Ratings
-                    rating={4.8}
-                  >
-                    <span>
-                      4.8/5
-                    </span>
-                  </Ratings>
-                </div>,
-                <div
-                  className="result_card_tour__pricing col-xs col-sm"
-                >
-                  <span
-                    className="result_card_tour__special_offer"
-                  >
-                    Special Offer
-                  </span>
-                  <span
-                    className="result_card_tour__price"
-                  >
-                    $30
-                  </span>
-                </div>,
-              ],
-              "className": "row between-xs middle-xs",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": <Ratings
-                    rating={4.8}
-                  >
-                    <span>
-                      4.8/5
-                    </span>
-                  </Ratings>,
-                  "className": "result_card_tour__rating col-xs-4 col-sm",
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "function",
-                  "props": Object {
-                    "children": <span>
-                      4.8/5
-                    </span>,
-                    "rating": 4.8,
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "4.8/5",
-                    },
-                    "ref": null,
-                    "rendered": "4.8/5",
-                    "type": "span",
-                  },
-                  "type": [Function],
-                },
-                "type": "div",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    <span
-                      className="result_card_tour__special_offer"
-                    >
-                      Special Offer
-                    </span>,
-                    <span
-                      className="result_card_tour__price"
-                    >
-                      $30
-                    </span>,
-                  ],
-                  "className": "result_card_tour__pricing col-xs col-sm",
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "Special Offer",
-                      "className": "result_card_tour__special_offer",
-                    },
-                    "ref": null,
-                    "rendered": "Special Offer",
-                    "type": "span",
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "$30",
-                      "className": "result_card_tour__price",
-                    },
-                    "ref": null,
-                    "rendered": "$30",
-                    "type": "span",
-                  },
-                ],
-                "type": "div",
-              },
-            ],
-            "type": "section",
-          },
-        ],
-        "type": "div",
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <picture
-            className="result_card_tour__picture col-xs-12 col-sm-3"
-          >
-            <img
-              alt=""
-              className="result_card_tour__img"
-              src=""
-            />
-          </picture>,
-          <div
-            className="result_card_tour__details col-xs-12 col-sm"
-          >
-            <section
-              className="row start-xs"
-            >
-              <div
-                className="col-xs-12"
-              >
-                <span>
-                  Tour Title
-                </span>
-              </div>
-            </section>
-            <section
-              className="row between-xs middle-xs"
-            >
-              <div
-                className="result_card_tour__rating col-xs-4 col-sm"
-              >
-                <Ratings
-                  rating={4.8}
-                >
-                  <span>
-                    4.8/5
-                  </span>
-                </Ratings>
-              </div>
-              <div
-                className="result_card_tour__pricing col-xs col-sm"
-              >
-                <span
-                  className="result_card_tour__special_offer"
-                >
-                  Special Offer
-                </span>
-                <span
-                  className="result_card_tour__price"
-                >
-                  $30
-                </span>
-              </div>
-            </section>
-          </div>,
-        ],
-        "className": "result_card_tour row",
-        "id": "result_card_tour-id-1",
-        "onClick": [MockFunction],
-        "onKeyPress": [MockFunction],
-        "role": "button",
-        "tabIndex": 1,
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": <img
-              alt=""
-              className="result_card_tour__img"
-              src=""
-            />,
-            "className": "result_card_tour__picture col-xs-12 col-sm-3",
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "alt": "",
-              "className": "result_card_tour__img",
-              "src": "",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "img",
-          },
-          "type": "picture",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <section
-                className="row start-xs"
-              >
-                <div
-                  className="col-xs-12"
-                >
-                  <span>
-                    Tour Title
-                  </span>
-                </div>
-              </section>,
-              <section
-                className="row between-xs middle-xs"
-              >
-                <div
-                  className="result_card_tour__rating col-xs-4 col-sm"
-                >
-                  <Ratings
-                    rating={4.8}
-                  >
-                    <span>
-                      4.8/5
-                    </span>
-                  </Ratings>
-                </div>
-                <div
-                  className="result_card_tour__pricing col-xs col-sm"
-                >
-                  <span
-                    className="result_card_tour__special_offer"
-                  >
-                    Special Offer
-                  </span>
-                  <span
-                    className="result_card_tour__price"
-                  >
-                    $30
-                  </span>
-                </div>
-              </section>,
-            ],
-            "className": "result_card_tour__details col-xs-12 col-sm",
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <div
-                  className="col-xs-12"
-                >
-                  <span>
-                    Tour Title
-                  </span>
-                </div>,
-                "className": "row start-xs",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": <span>
-                    Tour Title
-                  </span>,
-                  "className": "col-xs-12",
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Tour Title",
-                  },
-                  "ref": null,
-                  "rendered": "Tour Title",
-                  "type": "span",
-                },
-                "type": "div",
-              },
-              "type": "section",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": Array [
-                  <div
-                    className="result_card_tour__rating col-xs-4 col-sm"
-                  >
-                    <Ratings
-                      rating={4.8}
-                    >
-                      <span>
-                        4.8/5
-                      </span>
-                    </Ratings>
-                  </div>,
-                  <div
-                    className="result_card_tour__pricing col-xs col-sm"
-                  >
-                    <span
-                      className="result_card_tour__special_offer"
-                    >
-                      Special Offer
-                    </span>
-                    <span
-                      className="result_card_tour__price"
-                    >
-                      $30
-                    </span>
-                  </div>,
-                ],
-                "className": "row between-xs middle-xs",
-              },
-              "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": <Ratings
-                      rating={4.8}
-                    >
-                      <span>
-                        4.8/5
-                      </span>
-                    </Ratings>,
-                    "className": "result_card_tour__rating col-xs-4 col-sm",
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "function",
-                    "props": Object {
-                      "children": <span>
-                        4.8/5
-                      </span>,
-                      "rating": 4.8,
-                    },
-                    "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "4.8/5",
-                      },
-                      "ref": null,
-                      "rendered": "4.8/5",
-                      "type": "span",
-                    },
-                    "type": [Function],
-                  },
-                  "type": "div",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      <span
-                        className="result_card_tour__special_offer"
-                      >
-                        Special Offer
-                      </span>,
-                      <span
-                        className="result_card_tour__price"
-                      >
-                        $30
-                      </span>,
-                    ],
-                    "className": "result_card_tour__pricing col-xs col-sm",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "Special Offer",
-                        "className": "result_card_tour__special_offer",
-                      },
-                      "ref": null,
-                      "rendered": "Special Offer",
-                      "type": "span",
-                    },
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "$30",
-                        "className": "result_card_tour__price",
-                      },
-                      "ref": null,
-                      "rendered": "$30",
-                      "type": "span",
-                    },
-                  ],
-                  "type": "div",
-                },
-              ],
-              "type": "section",
-            },
-          ],
-          "type": "div",
-        },
-      ],
-      "type": "div",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-}
-`;
-
 exports[`Result Card Tour renders without crashing 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
@@ -730,41 +40,15 @@ ShallowWrapper {
         <div
           className="result_card_tour__details col-xs-12 col-sm"
         >
-          <section
-            className="row start-xs"
-          >
-            <div
-              className="col-xs-12"
-            >
-              <span>
-                Tour Title
-              </span>
-            </div>
-          </section>
-          <section
-            className="row between-xs middle-xs"
-          >
-            <div
-              className="result_card_tour__rating col-xs-4 col-sm"
-            >
-              <Ratings
-                rating={4.8}
-              >
-                <span>
-                  4.8/5
-                </span>
-              </Ratings>
-            </div>
-            <div
-              className="result_card_tour__pricing col-xs col-sm"
-            >
-              <span
-                className="result_card_tour__price"
-              >
-                $30
-              </span>
-            </div>
-          </section>
+          <ResultCardTitle
+            title="Tour Title"
+          />
+          <ResultCardDetails
+            currency="$"
+            isSpecialOffer={false}
+            price="30"
+            rating={4.8}
+          />
         </div>,
       ],
       "className": "result_card_tour row",
@@ -810,41 +94,15 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <section
-              className="row start-xs"
-            >
-              <div
-                className="col-xs-12"
-              >
-                <span>
-                  Tour Title
-                </span>
-              </div>
-            </section>,
-            <section
-              className="row between-xs middle-xs"
-            >
-              <div
-                className="result_card_tour__rating col-xs-4 col-sm"
-              >
-                <Ratings
-                  rating={4.8}
-                >
-                  <span>
-                    4.8/5
-                  </span>
-                </Ratings>
-              </div>
-              <div
-                className="result_card_tour__pricing col-xs col-sm"
-              >
-                <span
-                  className="result_card_tour__price"
-                >
-                  $30
-                </span>
-              </div>
-            </section>,
+            <ResultCardTitle
+              title="Tour Title"
+            />,
+            <ResultCardDetails
+              currency="$"
+              isSpecialOffer={false}
+              price="30"
+              rating={4.8}
+            />,
           ],
           "className": "result_card_tour__details col-xs-12 col-sm",
         },
@@ -853,151 +111,27 @@ ShallowWrapper {
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "host",
+            "nodeType": "function",
             "props": Object {
-              "children": <div
-                className="col-xs-12"
-              >
-                <span>
-                  Tour Title
-                </span>
-              </div>,
-              "className": "row start-xs",
+              "title": "Tour Title",
             },
             "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": <span>
-                  Tour Title
-                </span>,
-                "className": "col-xs-12",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "Tour Title",
-                },
-                "ref": null,
-                "rendered": "Tour Title",
-                "type": "span",
-              },
-              "type": "div",
-            },
-            "type": "section",
+            "rendered": null,
+            "type": [Function],
           },
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "host",
+            "nodeType": "function",
             "props": Object {
-              "children": Array [
-                <div
-                  className="result_card_tour__rating col-xs-4 col-sm"
-                >
-                  <Ratings
-                    rating={4.8}
-                  >
-                    <span>
-                      4.8/5
-                    </span>
-                  </Ratings>
-                </div>,
-                <div
-                  className="result_card_tour__pricing col-xs col-sm"
-                >
-                  <span
-                    className="result_card_tour__price"
-                  >
-                    $30
-                  </span>
-                </div>,
-              ],
-              "className": "row between-xs middle-xs",
+              "currency": "$",
+              "isSpecialOffer": false,
+              "price": "30",
+              "rating": 4.8,
             },
             "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": <Ratings
-                    rating={4.8}
-                  >
-                    <span>
-                      4.8/5
-                    </span>
-                  </Ratings>,
-                  "className": "result_card_tour__rating col-xs-4 col-sm",
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "function",
-                  "props": Object {
-                    "children": <span>
-                      4.8/5
-                    </span>,
-                    "rating": 4.8,
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "4.8/5",
-                    },
-                    "ref": null,
-                    "rendered": "4.8/5",
-                    "type": "span",
-                  },
-                  "type": [Function],
-                },
-                "type": "div",
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    false,
-                    <span
-                      className="result_card_tour__price"
-                    >
-                      $30
-                    </span>,
-                  ],
-                  "className": "result_card_tour__pricing col-xs col-sm",
-                },
-                "ref": null,
-                "rendered": Array [
-                  false,
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "host",
-                    "props": Object {
-                      "children": "$30",
-                      "className": "result_card_tour__price",
-                    },
-                    "ref": null,
-                    "rendered": "$30",
-                    "type": "span",
-                  },
-                ],
-                "type": "div",
-              },
-            ],
-            "type": "section",
+            "rendered": null,
+            "type": [Function],
           },
         ],
         "type": "div",
@@ -1024,41 +158,15 @@ ShallowWrapper {
           <div
             className="result_card_tour__details col-xs-12 col-sm"
           >
-            <section
-              className="row start-xs"
-            >
-              <div
-                className="col-xs-12"
-              >
-                <span>
-                  Tour Title
-                </span>
-              </div>
-            </section>
-            <section
-              className="row between-xs middle-xs"
-            >
-              <div
-                className="result_card_tour__rating col-xs-4 col-sm"
-              >
-                <Ratings
-                  rating={4.8}
-                >
-                  <span>
-                    4.8/5
-                  </span>
-                </Ratings>
-              </div>
-              <div
-                className="result_card_tour__pricing col-xs col-sm"
-              >
-                <span
-                  className="result_card_tour__price"
-                >
-                  $30
-                </span>
-              </div>
-            </section>
+            <ResultCardTitle
+              title="Tour Title"
+            />
+            <ResultCardDetails
+              currency="$"
+              isSpecialOffer={false}
+              price="30"
+              rating={4.8}
+            />
           </div>,
         ],
         "className": "result_card_tour row",
@@ -1104,41 +212,15 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <section
-                className="row start-xs"
-              >
-                <div
-                  className="col-xs-12"
-                >
-                  <span>
-                    Tour Title
-                  </span>
-                </div>
-              </section>,
-              <section
-                className="row between-xs middle-xs"
-              >
-                <div
-                  className="result_card_tour__rating col-xs-4 col-sm"
-                >
-                  <Ratings
-                    rating={4.8}
-                  >
-                    <span>
-                      4.8/5
-                    </span>
-                  </Ratings>
-                </div>
-                <div
-                  className="result_card_tour__pricing col-xs col-sm"
-                >
-                  <span
-                    className="result_card_tour__price"
-                  >
-                    $30
-                  </span>
-                </div>
-              </section>,
+              <ResultCardTitle
+                title="Tour Title"
+              />,
+              <ResultCardDetails
+                currency="$"
+                isSpecialOffer={false}
+                price="30"
+                rating={4.8}
+              />,
             ],
             "className": "result_card_tour__details col-xs-12 col-sm",
           },
@@ -1147,151 +229,27 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "host",
+              "nodeType": "function",
               "props": Object {
-                "children": <div
-                  className="col-xs-12"
-                >
-                  <span>
-                    Tour Title
-                  </span>
-                </div>,
-                "className": "row start-xs",
+                "title": "Tour Title",
               },
               "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": <span>
-                    Tour Title
-                  </span>,
-                  "className": "col-xs-12",
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "Tour Title",
-                  },
-                  "ref": null,
-                  "rendered": "Tour Title",
-                  "type": "span",
-                },
-                "type": "div",
-              },
-              "type": "section",
+              "rendered": null,
+              "type": [Function],
             },
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "host",
+              "nodeType": "function",
               "props": Object {
-                "children": Array [
-                  <div
-                    className="result_card_tour__rating col-xs-4 col-sm"
-                  >
-                    <Ratings
-                      rating={4.8}
-                    >
-                      <span>
-                        4.8/5
-                      </span>
-                    </Ratings>
-                  </div>,
-                  <div
-                    className="result_card_tour__pricing col-xs col-sm"
-                  >
-                    <span
-                      className="result_card_tour__price"
-                    >
-                      $30
-                    </span>
-                  </div>,
-                ],
-                "className": "row between-xs middle-xs",
+                "currency": "$",
+                "isSpecialOffer": false,
+                "price": "30",
+                "rating": 4.8,
               },
               "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": <Ratings
-                      rating={4.8}
-                    >
-                      <span>
-                        4.8/5
-                      </span>
-                    </Ratings>,
-                    "className": "result_card_tour__rating col-xs-4 col-sm",
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "function",
-                    "props": Object {
-                      "children": <span>
-                        4.8/5
-                      </span>,
-                      "rating": 4.8,
-                    },
-                    "ref": null,
-                    "rendered": Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "4.8/5",
-                      },
-                      "ref": null,
-                      "rendered": "4.8/5",
-                      "type": "span",
-                    },
-                    "type": [Function],
-                  },
-                  "type": "div",
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": Array [
-                      false,
-                      <span
-                        className="result_card_tour__price"
-                      >
-                        $30
-                      </span>,
-                    ],
-                    "className": "result_card_tour__pricing col-xs col-sm",
-                  },
-                  "ref": null,
-                  "rendered": Array [
-                    false,
-                    Object {
-                      "instance": null,
-                      "key": undefined,
-                      "nodeType": "host",
-                      "props": Object {
-                        "children": "$30",
-                        "className": "result_card_tour__price",
-                      },
-                      "ref": null,
-                      "rendered": "$30",
-                      "type": "span",
-                    },
-                  ],
-                  "type": "div",
-                },
-              ],
-              "type": "section",
+              "rendered": null,
+              "type": [Function],
             },
           ],
           "type": "div",

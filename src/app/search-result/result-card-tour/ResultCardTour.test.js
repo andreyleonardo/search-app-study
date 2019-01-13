@@ -22,16 +22,6 @@ describe('Result Card Tour', () => {
     expect(resultCardTour).toMatchSnapshot();
   });
 
-  it('renders Special Offer text when isSpecialOffer is true', () => {
-    props = {
-      ...props,
-      isSpecialOffer: true
-    };
-    resultCardTour = shallow(<ResultCardTour {...props} />);
-
-    expect(resultCardTour).toMatchSnapshot();
-  });
-
   it('calls onClick when component is clicked', () => {
     resultCardTour.simulate('click');
 

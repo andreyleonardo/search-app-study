@@ -1,7 +1,7 @@
 import React from 'react';
-import he from 'he';
 import PropTypes from 'prop-types';
-import Ratings from '../../ratings/Ratings';
+import ResultCardTitle from './result-card-title/ResultCardTitle';
+import ResultCardDetails from './result-card-details/ResultCardDetails';
 
 import './ResultCardTour.scss';
 
@@ -20,22 +20,13 @@ const ResultCardTour = ({
       <img className="result_card_tour__img" src={imgSrc} alt={imgAlt} />
     </picture>
     <div className="result_card_tour__details col-xs-12 col-sm">
-      <section className="row start-xs">
-        <div className="col-xs-12">
-          <span>{he.decode(title)}</span>
-        </div>
-      </section>
-      <section className="row between-xs middle-xs">
-        <div className="result_card_tour__rating col-xs-4 col-sm">
-          <Ratings rating={rating}>
-            <span>{`${rating}/5`}</span>
-          </Ratings>
-        </div>
-        <div className="result_card_tour__pricing col-xs col-sm">
-          {isSpecialOffer && <span className="result_card_tour__special_offer">Special Offer</span>}
-          <span className="result_card_tour__price">{currency + price}</span>
-        </div>
-      </section>
+      <ResultCardTitle title={title} />
+      <ResultCardDetails
+        rating={rating}
+        currency={currency}
+        price={price}
+        isSpecialOffer={isSpecialOffer}
+      />
     </div>
   </div>
 );

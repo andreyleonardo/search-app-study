@@ -12,6 +12,7 @@ import imageEleven from './stylesheets/img/samuel-zeller-28772-unsplash.jpeg';
 import imageTwelve from './stylesheets/img/stefan-kunze-26931-unsplash.jpeg';
 import imageThirteen from './stylesheets/img/sweet-ice-cream-photography-83915-unsplash.jpeg';
 import imageFourteen from './stylesheets/img/vladimir-kudinov-58771-unsplash.jpeg';
+import backgroundImage from './stylesheets/img/app_background_image.jpeg';
 
 const pictures = [
   {
@@ -72,4 +73,5 @@ const pictures = [
   }
 ];
 
+export { backgroundImage };
 export default pictures;

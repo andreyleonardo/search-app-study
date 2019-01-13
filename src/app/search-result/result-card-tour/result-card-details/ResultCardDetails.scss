@@ -1,0 +1,28 @@
+@import "src/stylesheets/css/_colors";
+
+.result_card_details {
+  &__rating, &__pricing {
+    margin-top: 20px;
+  }
+
+  &__pricing {
+    text-align: right;
+  }
+
+  &__special_offer {
+    background-color: $orange;
+    color: white;
+    font-size: 16px;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    vertical-align: middle;
+  }
+
+  &__price {
+    right: 10px;
+    vertical-align: middle;
+    margin: 3px;
+  }
+}

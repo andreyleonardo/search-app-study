@@ -26,9 +26,12 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "class",
     "props": Object {
-      "children": Array [
+      "children": <div
+        className="search_result row center-xs"
+        id="search_result-id-0"
+      >
         <section
           className="col-xs-12 col-sm-7"
         >
@@ -43,7 +46,7 @@ ShallowWrapper {
             tabIndex={0}
             title="My Title"
           />
-        </section>,
+        </section>
         <section
           className="col-xs-12 col-sm-7"
         >
@@ -54,90 +57,15 @@ ShallowWrapper {
             imgSrc="vladimir-kudinov-58771-unsplash.jpeg"
             title="My Title"
           />
-        </section>,
-      ],
-      "className": "search_result row center-xs",
-      "id": "search_result-id-0",
+        </section>
+      </div>,
+      "disabled": false,
+      "display": "block",
+      "onOutsideClick": [Function],
+      "useCapture": true,
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": <ResultCardTour
-            currency="$"
-            imgAlt="Photo by Vladimir Kudinov on Unsplash"
-            imgSrc="vladimir-kudinov-58771-unsplash.jpeg"
-            isSpecialOffer={false}
-            onClick={[Function]}
-            price="30"
-            rating={0}
-            tabIndex={0}
-            title="My Title"
-          />,
-          "className": "col-xs-12 col-sm-7",
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "currency": "$",
-            "imgAlt": "Photo by Vladimir Kudinov on Unsplash",
-            "imgSrc": "vladimir-kudinov-58771-unsplash.jpeg",
-            "isSpecialOffer": false,
-            "onClick": [Function],
-            "price": "30",
-            "rating": 0,
-            "tabIndex": 0,
-            "title": "My Title",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        "type": "section",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": <ResultDetailsTour
-            description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            expand={false}
-            imgAlt="Photo by Vladimir Kudinov on Unsplash"
-            imgSrc="vladimir-kudinov-58771-unsplash.jpeg"
-            title="My Title"
-          />,
-          "className": "col-xs-12 col-sm-7",
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-            "expand": false,
-            "imgAlt": "Photo by Vladimir Kudinov on Unsplash",
-            "imgSrc": "vladimir-kudinov-58771-unsplash.jpeg",
-            "title": "My Title",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        "type": "section",
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
+    "rendered": Object {
       "instance": null,
       "key": undefined,
       "nodeType": "host",
@@ -249,6 +177,166 @@ ShallowWrapper {
         },
       ],
       "type": "div",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <div
+          className="search_result row center-xs"
+          id="search_result-id-0"
+        >
+          <section
+            className="col-xs-12 col-sm-7"
+          >
+            <ResultCardTour
+              currency="$"
+              imgAlt="Photo by Vladimir Kudinov on Unsplash"
+              imgSrc="vladimir-kudinov-58771-unsplash.jpeg"
+              isSpecialOffer={false}
+              onClick={[Function]}
+              price="30"
+              rating={0}
+              tabIndex={0}
+              title="My Title"
+            />
+          </section>
+          <section
+            className="col-xs-12 col-sm-7"
+          >
+            <ResultDetailsTour
+              description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+              expand={false}
+              imgAlt="Photo by Vladimir Kudinov on Unsplash"
+              imgSrc="vladimir-kudinov-58771-unsplash.jpeg"
+              title="My Title"
+            />
+          </section>
+        </div>,
+        "disabled": false,
+        "display": "block",
+        "onOutsideClick": [Function],
+        "useCapture": true,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <section
+              className="col-xs-12 col-sm-7"
+            >
+              <ResultCardTour
+                currency="$"
+                imgAlt="Photo by Vladimir Kudinov on Unsplash"
+                imgSrc="vladimir-kudinov-58771-unsplash.jpeg"
+                isSpecialOffer={false}
+                onClick={[Function]}
+                price="30"
+                rating={0}
+                tabIndex={0}
+                title="My Title"
+              />
+            </section>,
+            <section
+              className="col-xs-12 col-sm-7"
+            >
+              <ResultDetailsTour
+                description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                expand={false}
+                imgAlt="Photo by Vladimir Kudinov on Unsplash"
+                imgSrc="vladimir-kudinov-58771-unsplash.jpeg"
+                title="My Title"
+              />
+            </section>,
+          ],
+          "className": "search_result row center-xs",
+          "id": "search_result-id-0",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <ResultCardTour
+                currency="$"
+                imgAlt="Photo by Vladimir Kudinov on Unsplash"
+                imgSrc="vladimir-kudinov-58771-unsplash.jpeg"
+                isSpecialOffer={false}
+                onClick={[Function]}
+                price="30"
+                rating={0}
+                tabIndex={0}
+                title="My Title"
+              />,
+              "className": "col-xs-12 col-sm-7",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "currency": "$",
+                "imgAlt": "Photo by Vladimir Kudinov on Unsplash",
+                "imgSrc": "vladimir-kudinov-58771-unsplash.jpeg",
+                "isSpecialOffer": false,
+                "onClick": [Function],
+                "price": "30",
+                "rating": 0,
+                "tabIndex": 0,
+                "title": "My Title",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "section",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <ResultDetailsTour
+                description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                expand={false}
+                imgAlt="Photo by Vladimir Kudinov on Unsplash"
+                imgSrc="vladimir-kudinov-58771-unsplash.jpeg"
+                title="My Title"
+              />,
+              "className": "col-xs-12 col-sm-7",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                "expand": false,
+                "imgAlt": "Photo by Vladimir Kudinov on Unsplash",
+                "imgSrc": "vladimir-kudinov-58771-unsplash.jpeg",
+                "title": "My Title",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "section",
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {
