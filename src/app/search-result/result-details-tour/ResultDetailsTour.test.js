@@ -7,8 +7,10 @@ describe('Result Details Tour', () => {
 
   beforeEach(() => {
     props = {
-      description: 'Tour Title',
-      expand: false
+      title: 'Tour title',
+      description: 'Tour Description',
+      expand: false,
+      imgSrc: 'image source'
     };
 
     resultCardTour = shallow(<ResultDetailsTour {...props} />);

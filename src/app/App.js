@@ -7,6 +7,8 @@ import stubData from '../data.json';
 import backgroundImage from '../stylesheets/img/app_background_image.jpeg';
 import './App.scss';
 
+const MIN_QUERY_SIZE = 3;
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -17,33 +19,29 @@ class App extends Component {
     };
 
     this.onChange = this.onChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   onChange({ target: { value } }) {
-    this.setState((state) => {
-      const newState = {
-        ...state,
-        query: value
-      };
+    const query = value;
 
-      if (this.isQueryValid(newState.query)) {
-        const results = this.findTours(newState.query);
+    this.setState({ query });
+    this.handleSubmit({ query });
+  }
 
-        return {
-          ...newState,
-          results
-        };
-      }
+  handleSubmit(param) {
+    const { query } = param || this.state;
+    let results = [];
 
-      return {
-        ...newState,
-        results: []
-      };
-    });
+    if (this.isQueryValid(query)) {
+      results = this.findTours(query);
+    }
+
+    this.setState({ results });
   }
 
   isQueryValid(query) {
-    return query.length > 2;
+    return query.length >= MIN_QUERY_SIZE;
   }
 
   findTours(query) {
@@ -60,13 +58,13 @@ class App extends Component {
           <h1>Experience Finder</h1>
         </header>
         <main className="app__main row center-xs">
-          <section className="app__background">
+          <picture className="app__background">
             <img className="app__background_image" src={backgroundImage} alt="main section" />
-          </section>
+          </picture>
           <section className="app__search_bar col-xs-12">
             <div className="row center-xs">
               <div className="col-xs-12 col-sm-7">
-                <SearchBar onChange={this.onChange} />
+                <SearchBar onChange={this.onChange} handleSubmit={this.handleSubmit} />
               </div>
             </div>
           </section>

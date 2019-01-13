@@ -29,7 +29,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <div
+        <section
           className="col-xs-12 col-sm-7"
         >
           <ResultCardTour
@@ -43,15 +43,18 @@ ShallowWrapper {
             tabIndex={0}
             title="My Title"
           />
-        </div>,
-        <div
+        </section>,
+        <section
           className="col-xs-12 col-sm-7"
         >
           <ResultDetailsTour
             description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             expand={false}
+            imgAlt="Photo by Vladimir Kudinov on Unsplash"
+            imgSrc="vladimir-kudinov-58771-unsplash.jpeg"
+            title="My Title"
           />
-        </div>,
+        </section>,
       ],
       "className": "search_result row center-xs",
       "id": "search_result-id-0",
@@ -96,7 +99,7 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
-        "type": "div",
+        "type": "section",
       },
       Object {
         "instance": null,
@@ -106,6 +109,9 @@ ShallowWrapper {
           "children": <ResultDetailsTour
             description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             expand={false}
+            imgAlt="Photo by Vladimir Kudinov on Unsplash"
+            imgSrc="vladimir-kudinov-58771-unsplash.jpeg"
+            title="My Title"
           />,
           "className": "col-xs-12 col-sm-7",
         },
@@ -117,12 +123,15 @@ ShallowWrapper {
           "props": Object {
             "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
             "expand": false,
+            "imgAlt": "Photo by Vladimir Kudinov on Unsplash",
+            "imgSrc": "vladimir-kudinov-58771-unsplash.jpeg",
+            "title": "My Title",
           },
           "ref": null,
           "rendered": null,
           "type": [Function],
         },
-        "type": "div",
+        "type": "section",
       },
     ],
     "type": "div",
@@ -134,7 +143,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <div
+          <section
             className="col-xs-12 col-sm-7"
           >
             <ResultCardTour
@@ -148,15 +157,18 @@ ShallowWrapper {
               tabIndex={0}
               title="My Title"
             />
-          </div>,
-          <div
+          </section>,
+          <section
             className="col-xs-12 col-sm-7"
           >
             <ResultDetailsTour
               description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
               expand={false}
+              imgAlt="Photo by Vladimir Kudinov on Unsplash"
+              imgSrc="vladimir-kudinov-58771-unsplash.jpeg"
+              title="My Title"
             />
-          </div>,
+          </section>,
         ],
         "className": "search_result row center-xs",
         "id": "search_result-id-0",
@@ -201,7 +213,7 @@ ShallowWrapper {
             "rendered": null,
             "type": [Function],
           },
-          "type": "div",
+          "type": "section",
         },
         Object {
           "instance": null,
@@ -211,6 +223,9 @@ ShallowWrapper {
             "children": <ResultDetailsTour
               description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
               expand={false}
+              imgAlt="Photo by Vladimir Kudinov on Unsplash"
+              imgSrc="vladimir-kudinov-58771-unsplash.jpeg"
+              title="My Title"
             />,
             "className": "col-xs-12 col-sm-7",
           },
@@ -222,12 +237,15 @@ ShallowWrapper {
             "props": Object {
               "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
               "expand": false,
+              "imgAlt": "Photo by Vladimir Kudinov on Unsplash",
+              "imgSrc": "vladimir-kudinov-58771-unsplash.jpeg",
+              "title": "My Title",
             },
             "ref": null,
             "rendered": null,
             "type": [Function],
           },
-          "type": "div",
+          "type": "section",
         },
       ],
       "type": "div",

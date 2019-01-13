@@ -37,4 +37,41 @@ describe('App Integration', () => {
 
     expect(app.find('SearchResult')).toHaveLength(0);
   });
+
+  it('submits a form calling handleSubmit that calls findTours with default state', () => {
+    const query = dataStub.tours[0].title;
+    const handleSubmitSpy = jest.spyOn(App.prototype, 'handleSubmit');
+    const findToursSpy = jest.spyOn(App.prototype, 'findTours');
+
+    app = mount(<App />);
+
+    app.setState({ query });
+
+    app.find('form#search-form-id').simulate('submit', { preventDefault: jest.fn() });
+
+    expect(handleSubmitSpy).toHaveBeenLastCalledWith();
+    expect(findToursSpy).toHaveBeenLastCalledWith(query);
+  });
+
+  it('calls handleSubmit with a new query when input changes', () => {
+    const query = dataStub.tours[0].title;
+    const handleSubmitSpy = jest.spyOn(App.prototype, 'handleSubmit');
+
+    app = mount(<App />);
+
+    app.find('input#search-input-id').simulate('change', { target: { value: query } });
+
+    expect(handleSubmitSpy).toHaveBeenCalledWith({ query });
+  });
+
+  it('calls findTours with a new query when input changes', () => {
+    const query = dataStub.tours[0].title;
+    const findToursSpy = jest.spyOn(App.prototype, 'findTours');
+
+    app = mount(<App />);
+
+    app.find('input#search-input-id').simulate('change', { target: { value: query } });
+
+    expect(findToursSpy).toHaveBeenCalledWith(query);
+  });
 });

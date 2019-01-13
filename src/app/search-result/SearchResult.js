@@ -38,7 +38,7 @@ class SearchResult extends Component {
 
     return (
       <div id={`search_result-id-${tabIndex}`} className="search_result row center-xs">
-        <div className="col-xs-12 col-sm-7">
+        <section className="col-xs-12 col-sm-7">
           <ResultCardTour
             title={title}
             rating={parseFloat(rating)}
@@ -50,13 +50,16 @@ class SearchResult extends Component {
             imgSrc={pictures[index].img}
             imgAlt={pictures[index].credits}
           />
-        </div>
-        <div className="col-xs-12 col-sm-7">
+        </section>
+        <section className="col-xs-12 col-sm-7">
           <ResultDetailsTour
+            title={title}
             description={descriptionStub}
             expand={showDetails}
+            imgSrc={pictures[index].img}
+            imgAlt={pictures[index].credits}
           />
-        </div>
+        </section>
       </div>
     );
   }

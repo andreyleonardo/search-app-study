@@ -28,7 +28,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <div
+        <picture
           className="result_card_tour__picture col-xs-12 col-sm-3"
         >
           <img
@@ -36,11 +36,11 @@ ShallowWrapper {
             className="result_card_tour__img"
             src=""
           />
-        </div>,
+        </picture>,
         <div
           className="result_card_tour__details col-xs-12 col-sm"
         >
-          <div
+          <section
             className="row start-xs"
           >
             <div
@@ -50,8 +50,8 @@ ShallowWrapper {
                 Tour Title
               </span>
             </div>
-          </div>
-          <div
+          </section>
+          <section
             className="row between-xs middle-xs"
           >
             <div
@@ -61,7 +61,7 @@ ShallowWrapper {
                 rating={4.8}
               >
                 <span>
-                  4.8
+                  4.8/5
                 </span>
               </Ratings>
             </div>
@@ -79,7 +79,7 @@ ShallowWrapper {
                 $30
               </span>
             </div>
-          </div>
+          </section>
         </div>,
       ],
       "className": "result_card_tour row",
@@ -117,7 +117,7 @@ ShallowWrapper {
           "rendered": null,
           "type": "img",
         },
-        "type": "div",
+        "type": "picture",
       },
       Object {
         "instance": null,
@@ -125,7 +125,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <div
+            <section
               className="row start-xs"
             >
               <div
@@ -135,8 +135,8 @@ ShallowWrapper {
                   Tour Title
                 </span>
               </div>
-            </div>,
-            <div
+            </section>,
+            <section
               className="row between-xs middle-xs"
             >
               <div
@@ -146,7 +146,7 @@ ShallowWrapper {
                   rating={4.8}
                 >
                   <span>
-                    4.8
+                    4.8/5
                   </span>
                 </Ratings>
               </div>
@@ -164,7 +164,7 @@ ShallowWrapper {
                   $30
                 </span>
               </div>
-            </div>,
+            </section>,
           ],
           "className": "result_card_tour__details col-xs-12 col-sm",
         },
@@ -209,7 +209,7 @@ ShallowWrapper {
               },
               "type": "div",
             },
-            "type": "div",
+            "type": "section",
           },
           Object {
             "instance": null,
@@ -224,7 +224,7 @@ ShallowWrapper {
                     rating={4.8}
                   >
                     <span>
-                      4.8
+                      4.8/5
                     </span>
                   </Ratings>
                 </div>,
@@ -256,7 +256,7 @@ ShallowWrapper {
                     rating={4.8}
                   >
                     <span>
-                      4.8
+                      4.8/5
                     </span>
                   </Ratings>,
                   "className": "result_card_tour__rating col-xs-4 col-sm",
@@ -268,7 +268,7 @@ ShallowWrapper {
                   "nodeType": "function",
                   "props": Object {
                     "children": <span>
-                      4.8
+                      4.8/5
                     </span>,
                     "rating": 4.8,
                   },
@@ -278,10 +278,10 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": 4.8,
+                      "children": "4.8/5",
                     },
                     "ref": null,
-                    "rendered": 4.8,
+                    "rendered": "4.8/5",
                     "type": "span",
                   },
                   "type": [Function],
@@ -337,7 +337,7 @@ ShallowWrapper {
                 "type": "div",
               },
             ],
-            "type": "div",
+            "type": "section",
           },
         ],
         "type": "div",
@@ -352,7 +352,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <div
+          <picture
             className="result_card_tour__picture col-xs-12 col-sm-3"
           >
             <img
@@ -360,11 +360,11 @@ ShallowWrapper {
               className="result_card_tour__img"
               src=""
             />
-          </div>,
+          </picture>,
           <div
             className="result_card_tour__details col-xs-12 col-sm"
           >
-            <div
+            <section
               className="row start-xs"
             >
               <div
@@ -374,8 +374,8 @@ ShallowWrapper {
                   Tour Title
                 </span>
               </div>
-            </div>
-            <div
+            </section>
+            <section
               className="row between-xs middle-xs"
             >
               <div
@@ -385,7 +385,7 @@ ShallowWrapper {
                   rating={4.8}
                 >
                   <span>
-                    4.8
+                    4.8/5
                   </span>
                 </Ratings>
               </div>
@@ -403,7 +403,7 @@ ShallowWrapper {
                   $30
                 </span>
               </div>
-            </div>
+            </section>
           </div>,
         ],
         "className": "result_card_tour row",
@@ -441,7 +441,7 @@ ShallowWrapper {
             "rendered": null,
             "type": "img",
           },
-          "type": "div",
+          "type": "picture",
         },
         Object {
           "instance": null,
@@ -449,7 +449,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <div
+              <section
                 className="row start-xs"
               >
                 <div
@@ -459,8 +459,8 @@ ShallowWrapper {
                     Tour Title
                   </span>
                 </div>
-              </div>,
-              <div
+              </section>,
+              <section
                 className="row between-xs middle-xs"
               >
                 <div
@@ -470,7 +470,7 @@ ShallowWrapper {
                     rating={4.8}
                   >
                     <span>
-                      4.8
+                      4.8/5
                     </span>
                   </Ratings>
                 </div>
@@ -488,7 +488,7 @@ ShallowWrapper {
                     $30
                   </span>
                 </div>
-              </div>,
+              </section>,
             ],
             "className": "result_card_tour__details col-xs-12 col-sm",
           },
@@ -533,7 +533,7 @@ ShallowWrapper {
                 },
                 "type": "div",
               },
-              "type": "div",
+              "type": "section",
             },
             Object {
               "instance": null,
@@ -548,7 +548,7 @@ ShallowWrapper {
                       rating={4.8}
                     >
                       <span>
-                        4.8
+                        4.8/5
                       </span>
                     </Ratings>
                   </div>,
@@ -580,7 +580,7 @@ ShallowWrapper {
                       rating={4.8}
                     >
                       <span>
-                        4.8
+                        4.8/5
                       </span>
                     </Ratings>,
                     "className": "result_card_tour__rating col-xs-4 col-sm",
@@ -592,7 +592,7 @@ ShallowWrapper {
                     "nodeType": "function",
                     "props": Object {
                       "children": <span>
-                        4.8
+                        4.8/5
                       </span>,
                       "rating": 4.8,
                     },
@@ -602,10 +602,10 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "children": 4.8,
+                        "children": "4.8/5",
                       },
                       "ref": null,
-                      "rendered": 4.8,
+                      "rendered": "4.8/5",
                       "type": "span",
                     },
                     "type": [Function],
@@ -661,7 +661,7 @@ ShallowWrapper {
                   "type": "div",
                 },
               ],
-              "type": "div",
+              "type": "section",
             },
           ],
           "type": "div",
@@ -718,7 +718,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <div
+        <picture
           className="result_card_tour__picture col-xs-12 col-sm-3"
         >
           <img
@@ -726,11 +726,11 @@ ShallowWrapper {
             className="result_card_tour__img"
             src=""
           />
-        </div>,
+        </picture>,
         <div
           className="result_card_tour__details col-xs-12 col-sm"
         >
-          <div
+          <section
             className="row start-xs"
           >
             <div
@@ -740,8 +740,8 @@ ShallowWrapper {
                 Tour Title
               </span>
             </div>
-          </div>
-          <div
+          </section>
+          <section
             className="row between-xs middle-xs"
           >
             <div
@@ -751,7 +751,7 @@ ShallowWrapper {
                 rating={4.8}
               >
                 <span>
-                  4.8
+                  4.8/5
                 </span>
               </Ratings>
             </div>
@@ -764,7 +764,7 @@ ShallowWrapper {
                 $30
               </span>
             </div>
-          </div>
+          </section>
         </div>,
       ],
       "className": "result_card_tour row",
@@ -802,7 +802,7 @@ ShallowWrapper {
           "rendered": null,
           "type": "img",
         },
-        "type": "div",
+        "type": "picture",
       },
       Object {
         "instance": null,
@@ -810,7 +810,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <div
+            <section
               className="row start-xs"
             >
               <div
@@ -820,8 +820,8 @@ ShallowWrapper {
                   Tour Title
                 </span>
               </div>
-            </div>,
-            <div
+            </section>,
+            <section
               className="row between-xs middle-xs"
             >
               <div
@@ -831,7 +831,7 @@ ShallowWrapper {
                   rating={4.8}
                 >
                   <span>
-                    4.8
+                    4.8/5
                   </span>
                 </Ratings>
               </div>
@@ -844,7 +844,7 @@ ShallowWrapper {
                   $30
                 </span>
               </div>
-            </div>,
+            </section>,
           ],
           "className": "result_card_tour__details col-xs-12 col-sm",
         },
@@ -889,7 +889,7 @@ ShallowWrapper {
               },
               "type": "div",
             },
-            "type": "div",
+            "type": "section",
           },
           Object {
             "instance": null,
@@ -904,7 +904,7 @@ ShallowWrapper {
                     rating={4.8}
                   >
                     <span>
-                      4.8
+                      4.8/5
                     </span>
                   </Ratings>
                 </div>,
@@ -931,7 +931,7 @@ ShallowWrapper {
                     rating={4.8}
                   >
                     <span>
-                      4.8
+                      4.8/5
                     </span>
                   </Ratings>,
                   "className": "result_card_tour__rating col-xs-4 col-sm",
@@ -943,7 +943,7 @@ ShallowWrapper {
                   "nodeType": "function",
                   "props": Object {
                     "children": <span>
-                      4.8
+                      4.8/5
                     </span>,
                     "rating": 4.8,
                   },
@@ -953,10 +953,10 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": 4.8,
+                      "children": "4.8/5",
                     },
                     "ref": null,
-                    "rendered": 4.8,
+                    "rendered": "4.8/5",
                     "type": "span",
                   },
                   "type": [Function],
@@ -997,7 +997,7 @@ ShallowWrapper {
                 "type": "div",
               },
             ],
-            "type": "div",
+            "type": "section",
           },
         ],
         "type": "div",
@@ -1012,7 +1012,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <div
+          <picture
             className="result_card_tour__picture col-xs-12 col-sm-3"
           >
             <img
@@ -1020,11 +1020,11 @@ ShallowWrapper {
               className="result_card_tour__img"
               src=""
             />
-          </div>,
+          </picture>,
           <div
             className="result_card_tour__details col-xs-12 col-sm"
           >
-            <div
+            <section
               className="row start-xs"
             >
               <div
@@ -1034,8 +1034,8 @@ ShallowWrapper {
                   Tour Title
                 </span>
               </div>
-            </div>
-            <div
+            </section>
+            <section
               className="row between-xs middle-xs"
             >
               <div
@@ -1045,7 +1045,7 @@ ShallowWrapper {
                   rating={4.8}
                 >
                   <span>
-                    4.8
+                    4.8/5
                   </span>
                 </Ratings>
               </div>
@@ -1058,7 +1058,7 @@ ShallowWrapper {
                   $30
                 </span>
               </div>
-            </div>
+            </section>
           </div>,
         ],
         "className": "result_card_tour row",
@@ -1096,7 +1096,7 @@ ShallowWrapper {
             "rendered": null,
             "type": "img",
           },
-          "type": "div",
+          "type": "picture",
         },
         Object {
           "instance": null,
@@ -1104,7 +1104,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <div
+              <section
                 className="row start-xs"
               >
                 <div
@@ -1114,8 +1114,8 @@ ShallowWrapper {
                     Tour Title
                   </span>
                 </div>
-              </div>,
-              <div
+              </section>,
+              <section
                 className="row between-xs middle-xs"
               >
                 <div
@@ -1125,7 +1125,7 @@ ShallowWrapper {
                     rating={4.8}
                   >
                     <span>
-                      4.8
+                      4.8/5
                     </span>
                   </Ratings>
                 </div>
@@ -1138,7 +1138,7 @@ ShallowWrapper {
                     $30
                   </span>
                 </div>
-              </div>,
+              </section>,
             ],
             "className": "result_card_tour__details col-xs-12 col-sm",
           },
@@ -1183,7 +1183,7 @@ ShallowWrapper {
                 },
                 "type": "div",
               },
-              "type": "div",
+              "type": "section",
             },
             Object {
               "instance": null,
@@ -1198,7 +1198,7 @@ ShallowWrapper {
                       rating={4.8}
                     >
                       <span>
-                        4.8
+                        4.8/5
                       </span>
                     </Ratings>
                   </div>,
@@ -1225,7 +1225,7 @@ ShallowWrapper {
                       rating={4.8}
                     >
                       <span>
-                        4.8
+                        4.8/5
                       </span>
                     </Ratings>,
                     "className": "result_card_tour__rating col-xs-4 col-sm",
@@ -1237,7 +1237,7 @@ ShallowWrapper {
                     "nodeType": "function",
                     "props": Object {
                       "children": <span>
-                        4.8
+                        4.8/5
                       </span>,
                       "rating": 4.8,
                     },
@@ -1247,10 +1247,10 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "host",
                       "props": Object {
-                        "children": 4.8,
+                        "children": "4.8/5",
                       },
                       "ref": null,
-                      "rendered": 4.8,
+                      "rendered": "4.8/5",
                       "type": "span",
                     },
                     "type": [Function],
@@ -1291,7 +1291,7 @@ ShallowWrapper {
                   "type": "div",
                 },
               ],
-              "type": "div",
+              "type": "section",
             },
           ],
           "type": "div",

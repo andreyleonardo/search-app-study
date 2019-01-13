@@ -4,8 +4,11 @@ exports[`Result Details Tour renders without crashing 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ResultDetailsTour
-    description="Tour Title"
+    description="Tour Description"
     expand={false}
+    imgAlt=""
+    imgSrc="image source"
+    title="Tour title"
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -21,24 +24,103 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "aria-expanded": false,
-      "children": <p>
-        Tour Title
-      </p>,
-      "className": "result_details_tour",
+      "children": Array [
+        <picture
+          className="result_details_tour__picture hidden-xs col-sm-12"
+        >
+          <img
+            alt=""
+            className="result_details_tour__img"
+            src="image source"
+          />
+        </picture>,
+        <article
+          className="result_details_tour__description col-xs-12"
+        >
+          <h1>
+            Tour title
+          </h1>
+          <p>
+            Tour Description
+          </p>
+        </article>,
+      ],
+      "className": "result_details_tour row",
       "id": "result_details_tour-id",
     },
     "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": "Tour Title",
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <img
+            alt=""
+            className="result_details_tour__img"
+            src="image source"
+          />,
+          "className": "result_details_tour__picture hidden-xs col-sm-12",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "",
+            "className": "result_details_tour__img",
+            "src": "image source",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        "type": "picture",
       },
-      "ref": null,
-      "rendered": "Tour Title",
-      "type": "p",
-    },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1>
+              Tour title
+            </h1>,
+            <p>
+              Tour Description
+            </p>,
+          ],
+          "className": "result_details_tour__description col-xs-12",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Tour title",
+            },
+            "ref": null,
+            "rendered": "Tour title",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Tour Description",
+            },
+            "ref": null,
+            "rendered": "Tour Description",
+            "type": "p",
+          },
+        ],
+        "type": "article",
+      },
+    ],
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -48,24 +130,103 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "aria-expanded": false,
-        "children": <p>
-          Tour Title
-        </p>,
-        "className": "result_details_tour",
+        "children": Array [
+          <picture
+            className="result_details_tour__picture hidden-xs col-sm-12"
+          >
+            <img
+              alt=""
+              className="result_details_tour__img"
+              src="image source"
+            />
+          </picture>,
+          <article
+            className="result_details_tour__description col-xs-12"
+          >
+            <h1>
+              Tour title
+            </h1>
+            <p>
+              Tour Description
+            </p>
+          </article>,
+        ],
+        "className": "result_details_tour row",
         "id": "result_details_tour-id",
       },
       "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Tour Title",
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <img
+              alt=""
+              className="result_details_tour__img"
+              src="image source"
+            />,
+            "className": "result_details_tour__picture hidden-xs col-sm-12",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "",
+              "className": "result_details_tour__img",
+              "src": "image source",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          "type": "picture",
         },
-        "ref": null,
-        "rendered": "Tour Title",
-        "type": "p",
-      },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1>
+                Tour title
+              </h1>,
+              <p>
+                Tour Description
+              </p>,
+            ],
+            "className": "result_details_tour__description col-xs-12",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Tour title",
+              },
+              "ref": null,
+              "rendered": "Tour title",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Tour Description",
+              },
+              "ref": null,
+              "rendered": "Tour Description",
+              "type": "p",
+            },
+          ],
+          "type": "article",
+        },
+      ],
       "type": "div",
     },
   ],

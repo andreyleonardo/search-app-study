@@ -6,24 +6,36 @@ import classnames from 'classnames';
 import './ResultDetailsTour.scss';
 
 const ResultDetailsTour = ({
-  description, expand
+  description, expand, imgAlt, imgSrc, title
 }) => (
   <div
     id="result_details_tour-id"
     aria-expanded={expand}
-    className={classnames('result_details_tour', { 'result_details_tour--expanded': expand })}
+    className={classnames('result_details_tour row', { 'result_details_tour--expanded': expand })}
   >
-    <p>{he.decode(description)}</p>
+    <picture className="result_details_tour__picture hidden-xs col-sm-12">
+      <img className="result_details_tour__img" src={imgSrc} alt={imgAlt} />
+    </picture>
+    <article className="result_details_tour__description col-xs-12">
+      <h1>
+        {he.decode(title)}
+      </h1>
+      <p>{he.decode(description)}</p>
+    </article>
   </div>
 );
 
 ResultDetailsTour.propTypes = {
+  title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  expand: PropTypes.bool
+  expand: PropTypes.bool,
+  imgAlt: PropTypes.string,
+  imgSrc: PropTypes.string.isRequired
 };
 
 ResultDetailsTour.defaultProps = {
-  expand: false
+  expand: false,
+  imgAlt: ''
 };
 
 export default ResultDetailsTour;

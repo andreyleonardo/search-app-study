@@ -6,7 +6,8 @@ describe('Search Bar', () => {
   let searchBar;
   beforeEach(() => {
     props = {
-      onChange: jest.fn()
+      onChange: jest.fn(),
+      handleSubmit: jest.fn()
     };
     searchBar = shallow(<SearchBar {...props} />);
   });
@@ -19,5 +20,18 @@ describe('Search Bar', () => {
     searchBar.find('input#search-input-id').simulate('change');
 
     expect(props.onChange).toHaveBeenCalledTimes(1);
+  });
+
+  it('calls handleSubmit function when present and submits form', () => {
+    searchBar.find('form#search-form-id').simulate('submit', { preventDefault: jest.fn() });
+
+    expect(props.handleSubmit).toHaveBeenCalledTimes(1);
+  });
+
+  it('does not calls handleSubmit function when is not present and submits form', () => {
+    searchBar.setProps({ handleSubmit: null });
+    searchBar.find('form#search-form-id').simulate('submit', { preventDefault: jest.fn() });
+
+    expect(props.handleSubmit).toHaveBeenCalledTimes(0);
   });
 });

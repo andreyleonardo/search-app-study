@@ -133,7 +133,7 @@ ShallowWrapper {
         <main
           className="app__main row center-xs"
         >
-          <section
+          <picture
             className="app__background"
           >
             <img
@@ -141,7 +141,7 @@ ShallowWrapper {
               className="app__background_image"
               src="app_background_image.jpeg"
             />
-          </section>
+          </picture>
           <section
             className="app__search_bar col-xs-12"
           >
@@ -152,6 +152,8 @@ ShallowWrapper {
                 className="col-xs-12 col-sm-7"
               >
                 <SearchBar
+                  handleSubmit={[Function]}
+                  name="search_bar_input"
                   onChange={[Function]}
                 />
               </div>
@@ -196,7 +198,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <section
+            <picture
               className="app__background"
             >
               <img
@@ -204,7 +206,7 @@ ShallowWrapper {
                 className="app__background_image"
                 src="app_background_image.jpeg"
               />
-            </section>,
+            </picture>,
             <section
               className="app__search_bar col-xs-12"
             >
@@ -215,6 +217,8 @@ ShallowWrapper {
                   className="col-xs-12 col-sm-7"
                 >
                   <SearchBar
+                    handleSubmit={[Function]}
+                    name="search_bar_input"
                     onChange={[Function]}
                   />
                 </div>
@@ -254,7 +258,7 @@ ShallowWrapper {
               "rendered": null,
               "type": "img",
             },
-            "type": "section",
+            "type": "picture",
           },
           Object {
             "instance": null,
@@ -268,6 +272,8 @@ ShallowWrapper {
                   className="col-xs-12 col-sm-7"
                 >
                   <SearchBar
+                    handleSubmit={[Function]}
+                    name="search_bar_input"
                     onChange={[Function]}
                   />
                 </div>
@@ -284,6 +290,8 @@ ShallowWrapper {
                   className="col-xs-12 col-sm-7"
                 >
                   <SearchBar
+                    handleSubmit={[Function]}
+                    name="search_bar_input"
                     onChange={[Function]}
                   />
                 </div>,
@@ -296,6 +304,8 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": <SearchBar
+                    handleSubmit={[Function]}
+                    name="search_bar_input"
                     onChange={[Function]}
                   />,
                   "className": "col-xs-12 col-sm-7",
@@ -306,6 +316,8 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "function",
                   "props": Object {
+                    "handleSubmit": [Function],
+                    "name": "search_bar_input",
                     "onChange": [Function],
                   },
                   "ref": null,
@@ -353,7 +365,7 @@ ShallowWrapper {
           <main
             className="app__main row center-xs"
           >
-            <section
+            <picture
               className="app__background"
             >
               <img
@@ -361,7 +373,7 @@ ShallowWrapper {
                 className="app__background_image"
                 src="app_background_image.jpeg"
               />
-            </section>
+            </picture>
             <section
               className="app__search_bar col-xs-12"
             >
@@ -372,6 +384,8 @@ ShallowWrapper {
                   className="col-xs-12 col-sm-7"
                 >
                   <SearchBar
+                    handleSubmit={[Function]}
+                    name="search_bar_input"
                     onChange={[Function]}
                   />
                 </div>
@@ -416,7 +430,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <section
+              <picture
                 className="app__background"
               >
                 <img
@@ -424,7 +438,7 @@ ShallowWrapper {
                   className="app__background_image"
                   src="app_background_image.jpeg"
                 />
-              </section>,
+              </picture>,
               <section
                 className="app__search_bar col-xs-12"
               >
@@ -435,6 +449,8 @@ ShallowWrapper {
                     className="col-xs-12 col-sm-7"
                   >
                     <SearchBar
+                      handleSubmit={[Function]}
+                      name="search_bar_input"
                       onChange={[Function]}
                     />
                   </div>
@@ -474,7 +490,7 @@ ShallowWrapper {
                 "rendered": null,
                 "type": "img",
               },
-              "type": "section",
+              "type": "picture",
             },
             Object {
               "instance": null,
@@ -488,6 +504,8 @@ ShallowWrapper {
                     className="col-xs-12 col-sm-7"
                   >
                     <SearchBar
+                      handleSubmit={[Function]}
+                      name="search_bar_input"
                       onChange={[Function]}
                     />
                   </div>
@@ -504,6 +522,8 @@ ShallowWrapper {
                     className="col-xs-12 col-sm-7"
                   >
                     <SearchBar
+                      handleSubmit={[Function]}
+                      name="search_bar_input"
                       onChange={[Function]}
                     />
                   </div>,
@@ -516,6 +536,8 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": <SearchBar
+                      handleSubmit={[Function]}
+                      name="search_bar_input"
                       onChange={[Function]}
                     />,
                     "className": "col-xs-12 col-sm-7",
@@ -526,6 +548,8 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "function",
                     "props": Object {
+                      "handleSubmit": [Function],
+                      "name": "search_bar_input",
                       "onChange": [Function],
                     },
                     "ref": null,
