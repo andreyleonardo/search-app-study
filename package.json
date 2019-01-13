@@ -7,7 +7,8 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
     "lint": "eslint src",
-    "test:functional": "nightwatch"
+    "test:functional": "start-server-and-test start http://localhost:3000 test:nightwatch",
+    "test:nightwatch": "nightwatch"
   },
   "dependencies": {
     "@babel/core": "7.1.6",
@@ -71,7 +72,8 @@
     "jest-pnp-resolver": "1.0.1",
     "jest-resolve": "23.6.0",
     "nightwatch": "^1.0.18",
-    "react-dev-utils": "^7.0.1"
+    "react-dev-utils": "^7.0.1",
+    "start-server-and-test": "^1.7.11"
   },
   "browserslist": [
     ">0.2%",

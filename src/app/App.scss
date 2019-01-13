@@ -9,13 +9,18 @@
     overflow: hidden;
     background-color: white;
     position: fixed;
+    max-height: 135px;
     top: 0;
     width: 100%;
     justify-content: center;
+
+    @media screen and (max-width: $mobile_max_width) {
+      max-height: 85px;
+    }
   }
 
   &__main {
-    margin: 110px 0 50px 0;
+    margin: 135px 0 50px 0;
     @media screen and (max-width: $mobile_max_width) {
       margin: 85px 0 50px 0;
     }

@@ -4,6 +4,8 @@ import ResultCardTour from './result-card-tour/ResultCardTour';
 import ResultDetailsTour from './result-details-tour/ResultDetailsTour';
 import './SearchResult.scss';
 
+const descriptionStub = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
+
 class SearchResult extends Component {
   constructor(props) {
     super(props);
@@ -32,7 +34,7 @@ class SearchResult extends Component {
     const { showDetails } = this.state;
 
     return (
-      <div className="row center-xs">
+      <div id={`search_result-id-${tabIndex}`} className="search_result row center-xs">
         <div className="col-xs-12 col-sm-7">
           <ResultCardTour
             title={title}
@@ -46,13 +48,8 @@ class SearchResult extends Component {
         </div>
         <div className="col-xs-12 col-sm-7">
           <ResultDetailsTour
-            title={title}
-            rating={rating}
-            currency={currency}
-            price={price}
-            isSpecialOffer={isSpecialOffer}
+            description={descriptionStub}
             expand={showDetails}
-            tabIndex={tabIndex}
           />
         </div>
       </div>

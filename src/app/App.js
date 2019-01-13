@@ -47,8 +47,8 @@ class App extends Component {
   }
 
   findTours(query) {
-    const { data } = this.props;
-    return data.tours.filter(tour => tour.title.toLowerCase().match(query.toLowerCase()));
+    const { data: { tours } } = this.props;
+    return tours.filter(tour => tour.title.toLowerCase().match(query.toLowerCase()));
   }
 
   render() {

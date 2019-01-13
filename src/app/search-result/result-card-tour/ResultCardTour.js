@@ -9,6 +9,7 @@ const ResultCardTour = ({
   title, rating, currency, price, isSpecialOffer, onClick, tabIndex
 }) => (
   <div
+    id={`result_card_tour-id-${tabIndex}`}
     className="result_card_tour row"
     role="button"
     onKeyPress={onClick}

@@ -7,12 +7,8 @@ describe('Result Details Tour', () => {
 
   beforeEach(() => {
     props = {
-      title: 'Tour Title',
-      currency: '$',
-      price: '30',
-      rating: '4.8',
-      onClick: jest.fn(),
-      tabIndex: 1
+      description: 'Tour Title',
+      expand: false
     };
 
     resultCardTour = shallow(<ResultDetailsTour {...props} />);
@@ -22,13 +18,9 @@ describe('Result Details Tour', () => {
     expect(resultCardTour).toMatchSnapshot();
   });
 
-  it('renders Special Offer text when isSpecialOffer is true', () => {
-    props = {
-      ...props,
-      isSpecialOffer: true
-    };
-    resultCardTour = shallow(<ResultDetailsTour {...props} />);
+  it('sets expanded class when expand is true', () => {
+    resultCardTour.setProps({ expand: true });
 
-    expect(resultCardTour).toMatchSnapshot();
+    expect(resultCardTour.exists('.result_details_tour--expanded')).toBeTruthy();
   });
 });
