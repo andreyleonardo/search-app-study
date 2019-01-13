@@ -8,6 +8,7 @@ ShallowWrapper {
       Object {
         "currency": "$",
         "price": "30",
+        "rating": "0",
         "title": "My Title",
       }
     }
@@ -35,7 +36,7 @@ ShallowWrapper {
             isSpecialOffer={false}
             onClick={[Function]}
             price="30"
-            rating="0"
+            rating={0}
             tabIndex={0}
             title="My Title"
           />
@@ -68,7 +69,7 @@ ShallowWrapper {
             isSpecialOffer={false}
             onClick={[Function]}
             price="30"
-            rating="0"
+            rating={0}
             tabIndex={0}
             title="My Title"
           />,
@@ -84,7 +85,7 @@ ShallowWrapper {
             "isSpecialOffer": false,
             "onClick": [Function],
             "price": "30",
-            "rating": "0",
+            "rating": 0,
             "tabIndex": 0,
             "title": "My Title",
           },
@@ -148,7 +149,7 @@ ShallowWrapper {
               isSpecialOffer={false}
               onClick={[Function]}
               price="30"
-              rating="0"
+              rating={0}
               tabIndex={0}
               title="My Title"
             />
@@ -181,7 +182,7 @@ ShallowWrapper {
               isSpecialOffer={false}
               onClick={[Function]}
               price="30"
-              rating="0"
+              rating={0}
               tabIndex={0}
               title="My Title"
             />,
@@ -197,7 +198,7 @@ ShallowWrapper {
               "isSpecialOffer": false,
               "onClick": [Function],
               "price": "30",
-              "rating": "0",
+              "rating": 0,
               "tabIndex": 0,
               "title": "My Title",
             },

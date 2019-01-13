@@ -36,7 +36,7 @@ class SearchResult extends Component {
         <div className="col-xs-12 col-sm-7">
           <ResultCardTour
             title={title}
-            rating={rating}
+            rating={parseFloat(rating)}
             currency={currency}
             price={price}
             isSpecialOffer={isSpecialOffer}

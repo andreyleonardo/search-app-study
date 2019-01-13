@@ -1,3 +1,5 @@
+@import "src/stylesheets/css/_colors";
+
 .result_card_tour {
   cursor: pointer;
   margin: 3px;
@@ -5,7 +7,49 @@
   background-color: white;
   min-height: 100px;
   transition: box-shadow 0.5s;
+  text-align: left;
+
   &:hover {
     box-shadow: 0px 0px 2px 5px rgba(255,255,255,1);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0px 0px 2px 5px rgba(255,255,255,1);
+  }
+
+  &__rating, &__pricing {
+    margin-top: 20px;
+  }
+
+  &__pricing {
+    text-align: right;
+  }
+
+  &__special_offer {
+    background-color: $secondary;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    vertical-align: middle;
+  }
+
+  &__price {
+    right: 10px;
+    vertical-align: middle;
+    margin: 3px;
+  }
+
+  &__details {
+    padding: 10px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }

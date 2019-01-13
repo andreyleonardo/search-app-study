@@ -1,5 +1,4 @@
-$header_size:110px;
-
+@import "src/stylesheets/css/_screen-sizes";
 .app {
   text-align: center;
   height: 100%;
@@ -11,13 +10,15 @@ $header_size:110px;
     background-color: white;
     position: fixed;
     top: 0;
-    height: $header_size;
     width: 100%;
     justify-content: center;
   }
 
   &__main {
     margin: 110px 0 50px 0;
+    @media screen and (max-width: $mobile_max_width) {
+      margin: 85px 0 50px 0;
+    }
   }
 
   &__background {

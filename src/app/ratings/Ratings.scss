@@ -1,0 +1,11 @@
+@import "src/stylesheets/css/_colors";
+
+.ratings {
+  display: flex;
+  align-items: center;
+
+  &__icon, &__children {
+    color: $primary;
+    margin: 3px;
+  }
+}

@@ -10,7 +10,7 @@ describe('Result Card Tour', () => {
       title: 'Tour Title',
       currency: '$',
       price: '30',
-      rating: '4.8',
+      rating: 4.8,
       onClick: jest.fn(),
       tabIndex: 1
     };
@@ -22,13 +22,19 @@ describe('Result Card Tour', () => {
     expect(resultCardTour).toMatchSnapshot();
   });
 
-  // it('renders Special Offer text when isSpecialOffer is true', () => {
-  //   props = {
-  //     ...props,
-  //     isSpecialOffer: true
-  //   };
-  //   resultCardTour = shallow(<ResultCardTour {...props} />);
-  //
-  //   expect(resultCardTour).toMatchSnapshot();
-  // });
+  it('renders Special Offer text when isSpecialOffer is true', () => {
+    props = {
+      ...props,
+      isSpecialOffer: true
+    };
+    resultCardTour = shallow(<ResultCardTour {...props} />);
+
+    expect(resultCardTour).toMatchSnapshot();
+  });
+
+  it('calls onClick when component is clicked', () => {
+    resultCardTour.simulate('click');
+
+    expect(props.onClick).toHaveBeenCalledTimes(1);
+  });
 });

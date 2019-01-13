@@ -28,7 +28,7 @@ input {
   box-shadow: none;
   outline: none;
   font-family: inherit;
-  font-size: 24px;
+  font-size: calc(16px + (26 - 16) * ((100vw - 300px) / (1600 - 300)));
   padding: 15px;
   width: 100%;
 }

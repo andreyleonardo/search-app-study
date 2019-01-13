@@ -8,7 +8,8 @@ describe('Search Result', () => {
       result: {
         title: 'My Title',
         currency: '$',
-        price: '30'
+        price: '30',
+        rating: '0'
       }
     };
     searchResult = shallow(<SearchResult {...props} />);
