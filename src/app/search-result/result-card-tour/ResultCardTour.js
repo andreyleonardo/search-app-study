@@ -6,10 +6,10 @@ import ResultCardDetails from './result-card-details/ResultCardDetails';
 import './ResultCardTour.scss';
 
 const ResultCardTour = ({
-  title, rating, currency, price, isSpecialOffer, onClick, tabIndex, imgSrc, imgAlt
+  index, title, rating, currency, price, isSpecialOffer, onClick, tabIndex, imgSrc, imgAlt
 }) => (
   <div
-    id={`result_card_tour-id-${tabIndex}`}
+    id={`result-card-tour-id-${index}`}
     className="result_card_tour row"
     role="button"
     onKeyPress={onClick}
@@ -39,6 +39,7 @@ ResultCardTour.propTypes = {
   isSpecialOffer: PropTypes.bool,
   onClick: PropTypes.func.isRequired,
   tabIndex: PropTypes.number.isRequired,
+  index: PropTypes.number,
   imgAlt: PropTypes.string,
   imgSrc: PropTypes.string
 };
@@ -47,7 +48,8 @@ ResultCardTour.defaultProps = {
   rating: 0,
   isSpecialOffer: false,
   imgAlt: '',
-  imgSrc: ''
+  imgSrc: '',
+  index: 0
 };
 
 export default ResultCardTour;

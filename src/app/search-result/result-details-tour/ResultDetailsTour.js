@@ -6,10 +6,10 @@ import classnames from 'classnames';
 import './ResultDetailsTour.scss';
 
 const ResultDetailsTour = ({
-  description, expand, imgAlt, imgSrc, title
+  index, description, expand, imgAlt, imgSrc, title
 }) => (
   <div
-    id="result_details_tour-id"
+    id={`result-details-tour-id-${index}`}
     aria-expanded={expand}
     className={classnames('result_details_tour row', { 'result_details_tour--expanded': expand })}
   >
@@ -30,12 +30,14 @@ ResultDetailsTour.propTypes = {
   description: PropTypes.string.isRequired,
   expand: PropTypes.bool,
   imgAlt: PropTypes.string,
-  imgSrc: PropTypes.string.isRequired
+  imgSrc: PropTypes.string.isRequired,
+  index: PropTypes.number
 };
 
 ResultDetailsTour.defaultProps = {
   expand: false,
-  imgAlt: ''
+  imgAlt: '',
+  index: 0
 };
 
 export default ResultDetailsTour;

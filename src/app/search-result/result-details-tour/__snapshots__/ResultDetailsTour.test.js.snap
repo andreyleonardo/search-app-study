@@ -8,6 +8,7 @@ ShallowWrapper {
     expand={false}
     imgAlt=""
     imgSrc="image source"
+    index={0}
     title="Tour title"
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -46,7 +47,7 @@ ShallowWrapper {
         </article>,
       ],
       "className": "result_details_tour row",
-      "id": "result_details_tour-id",
+      "id": "result-details-tour-id-0",
     },
     "ref": null,
     "rendered": Array [
@@ -152,7 +153,7 @@ ShallowWrapper {
           </article>,
         ],
         "className": "result_details_tour row",
-        "id": "result_details_tour-id",
+        "id": "result-details-tour-id-0",
       },
       "ref": null,
       "rendered": Array [

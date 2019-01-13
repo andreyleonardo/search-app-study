@@ -30,7 +30,7 @@ ShallowWrapper {
     "props": Object {
       "children": <div
         className="search_result row center-xs"
-        id="search_result-id-0"
+        id="search-result-id-0"
       >
         <section
           className="col-xs-12 col-sm-7"
@@ -39,6 +39,7 @@ ShallowWrapper {
             currency="$"
             imgAlt="Photo by Vladimir Kudinov on Unsplash"
             imgSrc="vladimir-kudinov-58771-unsplash.jpeg"
+            index={0}
             isSpecialOffer={false}
             onClick={[Function]}
             price="30"
@@ -55,6 +56,7 @@ ShallowWrapper {
             expand={false}
             imgAlt="Photo by Vladimir Kudinov on Unsplash"
             imgSrc="vladimir-kudinov-58771-unsplash.jpeg"
+            index={0}
             title="My Title"
           />
         </section>
@@ -78,6 +80,7 @@ ShallowWrapper {
               currency="$"
               imgAlt="Photo by Vladimir Kudinov on Unsplash"
               imgSrc="vladimir-kudinov-58771-unsplash.jpeg"
+              index={0}
               isSpecialOffer={false}
               onClick={[Function]}
               price="30"
@@ -94,12 +97,13 @@ ShallowWrapper {
               expand={false}
               imgAlt="Photo by Vladimir Kudinov on Unsplash"
               imgSrc="vladimir-kudinov-58771-unsplash.jpeg"
+              index={0}
               title="My Title"
             />
           </section>,
         ],
         "className": "search_result row center-xs",
-        "id": "search_result-id-0",
+        "id": "search-result-id-0",
       },
       "ref": null,
       "rendered": Array [
@@ -112,6 +116,7 @@ ShallowWrapper {
               currency="$"
               imgAlt="Photo by Vladimir Kudinov on Unsplash"
               imgSrc="vladimir-kudinov-58771-unsplash.jpeg"
+              index={0}
               isSpecialOffer={false}
               onClick={[Function]}
               price="30"
@@ -130,6 +135,7 @@ ShallowWrapper {
               "currency": "$",
               "imgAlt": "Photo by Vladimir Kudinov on Unsplash",
               "imgSrc": "vladimir-kudinov-58771-unsplash.jpeg",
+              "index": 0,
               "isSpecialOffer": false,
               "onClick": [Function],
               "price": "30",
@@ -153,6 +159,7 @@ ShallowWrapper {
               expand={false}
               imgAlt="Photo by Vladimir Kudinov on Unsplash"
               imgSrc="vladimir-kudinov-58771-unsplash.jpeg"
+              index={0}
               title="My Title"
             />,
             "className": "col-xs-12 col-sm-7",
@@ -167,6 +174,7 @@ ShallowWrapper {
               "expand": false,
               "imgAlt": "Photo by Vladimir Kudinov on Unsplash",
               "imgSrc": "vladimir-kudinov-58771-unsplash.jpeg",
+              "index": 0,
               "title": "My Title",
             },
             "ref": null,
@@ -188,7 +196,7 @@ ShallowWrapper {
       "props": Object {
         "children": <div
           className="search_result row center-xs"
-          id="search_result-id-0"
+          id="search-result-id-0"
         >
           <section
             className="col-xs-12 col-sm-7"
@@ -197,6 +205,7 @@ ShallowWrapper {
               currency="$"
               imgAlt="Photo by Vladimir Kudinov on Unsplash"
               imgSrc="vladimir-kudinov-58771-unsplash.jpeg"
+              index={0}
               isSpecialOffer={false}
               onClick={[Function]}
               price="30"
@@ -213,6 +222,7 @@ ShallowWrapper {
               expand={false}
               imgAlt="Photo by Vladimir Kudinov on Unsplash"
               imgSrc="vladimir-kudinov-58771-unsplash.jpeg"
+              index={0}
               title="My Title"
             />
           </section>
@@ -236,6 +246,7 @@ ShallowWrapper {
                 currency="$"
                 imgAlt="Photo by Vladimir Kudinov on Unsplash"
                 imgSrc="vladimir-kudinov-58771-unsplash.jpeg"
+                index={0}
                 isSpecialOffer={false}
                 onClick={[Function]}
                 price="30"
@@ -252,12 +263,13 @@ ShallowWrapper {
                 expand={false}
                 imgAlt="Photo by Vladimir Kudinov on Unsplash"
                 imgSrc="vladimir-kudinov-58771-unsplash.jpeg"
+                index={0}
                 title="My Title"
               />
             </section>,
           ],
           "className": "search_result row center-xs",
-          "id": "search_result-id-0",
+          "id": "search-result-id-0",
         },
         "ref": null,
         "rendered": Array [
@@ -270,6 +282,7 @@ ShallowWrapper {
                 currency="$"
                 imgAlt="Photo by Vladimir Kudinov on Unsplash"
                 imgSrc="vladimir-kudinov-58771-unsplash.jpeg"
+                index={0}
                 isSpecialOffer={false}
                 onClick={[Function]}
                 price="30"
@@ -288,6 +301,7 @@ ShallowWrapper {
                 "currency": "$",
                 "imgAlt": "Photo by Vladimir Kudinov on Unsplash",
                 "imgSrc": "vladimir-kudinov-58771-unsplash.jpeg",
+                "index": 0,
                 "isSpecialOffer": false,
                 "onClick": [Function],
                 "price": "30",
@@ -311,6 +325,7 @@ ShallowWrapper {
                 expand={false}
                 imgAlt="Photo by Vladimir Kudinov on Unsplash"
                 imgSrc="vladimir-kudinov-58771-unsplash.jpeg"
+                index={0}
                 title="My Title"
               />,
               "className": "col-xs-12 col-sm-7",
@@ -325,6 +340,7 @@ ShallowWrapper {
                 "expand": false,
                 "imgAlt": "Photo by Vladimir Kudinov on Unsplash",
                 "imgSrc": "vladimir-kudinov-58771-unsplash.jpeg",
+                "index": 0,
                 "title": "My Title",
               },
               "ref": null,

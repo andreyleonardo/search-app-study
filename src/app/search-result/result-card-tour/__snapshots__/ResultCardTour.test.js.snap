@@ -7,6 +7,7 @@ ShallowWrapper {
     currency="$"
     imgAlt=""
     imgSrc=""
+    index={0}
     isSpecialOffer={false}
     onClick={[MockFunction]}
     price="30"
@@ -52,7 +53,7 @@ ShallowWrapper {
         </div>,
       ],
       "className": "result_card_tour row",
-      "id": "result_card_tour-id-1",
+      "id": "result-card-tour-id-0",
       "onClick": [MockFunction],
       "onKeyPress": [MockFunction],
       "role": "button",
@@ -170,7 +171,7 @@ ShallowWrapper {
           </div>,
         ],
         "className": "result_card_tour row",
-        "id": "result_card_tour-id-1",
+        "id": "result-card-tour-id-0",
         "onClick": [MockFunction],
         "onKeyPress": [MockFunction],
         "role": "button",

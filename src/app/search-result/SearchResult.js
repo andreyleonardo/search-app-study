@@ -46,9 +46,10 @@ class SearchResult extends Component {
 
     return (
       <OutsideClickHandler onOutsideClick={this.onOutsideClick}>
-        <div id={`search_result-id-${tabIndex}`} className="search_result row center-xs">
+        <div id={`search-result-id-${index}`} className="search_result row center-xs">
           <section className="col-xs-12 col-sm-7">
             <ResultCardTour
+              index={index}
               title={title}
               rating={parseFloat(rating)}
               currency={currency}
@@ -62,6 +63,7 @@ class SearchResult extends Component {
           </section>
           <section className="col-xs-12 col-sm-7">
             <ResultDetailsTour
+              index={index}
               title={title}
               description={descriptionStub}
               expand={showDetails}

@@ -1,7 +1,7 @@
 const chromedriver = require('chromedriver');
 
 module.exports = {
-  src_folders: ["tests/functional"],
+  src_folders: ["tests/functional/journeys"],
   test_settings: {
     default: {
       webdriver: {
