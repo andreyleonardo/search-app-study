@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Result Card Tour renders without crashing 1`] = `
+exports[`Result Card renders without crashing 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ResultCardTour
+  Symbol(enzyme.__unrendered__): <ResultCard
     currency="$"
     imgAlt=""
     imgSrc=""
@@ -13,7 +13,7 @@ ShallowWrapper {
     price="30"
     rating={4.8}
     tabIndex={1}
-    title="Tour Title"
+    title="Title"
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -30,19 +30,19 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <picture
-          className="result_card_tour__picture col-xs-12 col-sm-3"
+          className="result_card__picture col-xs-12 col-sm-3"
         >
           <img
             alt=""
-            className="result_card_tour__img"
+            className="result_card__img"
             src=""
           />
         </picture>,
         <div
-          className="result_card_tour__details col-xs-12 col-sm"
+          className="result_card__details col-xs-12 col-sm"
         >
           <ResultCardTitle
-            title="Tour Title"
+            title="Title"
           />
           <ResultCardDetails
             currency="$"
@@ -52,8 +52,8 @@ ShallowWrapper {
           />
         </div>,
       ],
-      "className": "result_card_tour row",
-      "id": "result-card-tour-id-0",
+      "className": "result_card row",
+      "id": "result-card-id-0",
       "onClick": [MockFunction],
       "onKeyPress": [MockFunction],
       "role": "button",
@@ -68,10 +68,10 @@ ShallowWrapper {
         "props": Object {
           "children": <img
             alt=""
-            className="result_card_tour__img"
+            className="result_card__img"
             src=""
           />,
-          "className": "result_card_tour__picture col-xs-12 col-sm-3",
+          "className": "result_card__picture col-xs-12 col-sm-3",
         },
         "ref": null,
         "rendered": Object {
@@ -80,7 +80,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "alt": "",
-            "className": "result_card_tour__img",
+            "className": "result_card__img",
             "src": "",
           },
           "ref": null,
@@ -96,7 +96,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <ResultCardTitle
-              title="Tour Title"
+              title="Title"
             />,
             <ResultCardDetails
               currency="$"
@@ -105,7 +105,7 @@ ShallowWrapper {
               rating={4.8}
             />,
           ],
-          "className": "result_card_tour__details col-xs-12 col-sm",
+          "className": "result_card__details col-xs-12 col-sm",
         },
         "ref": null,
         "rendered": Array [
@@ -114,7 +114,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "title": "Tour Title",
+              "title": "Title",
             },
             "ref": null,
             "rendered": null,
@@ -148,19 +148,19 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <picture
-            className="result_card_tour__picture col-xs-12 col-sm-3"
+            className="result_card__picture col-xs-12 col-sm-3"
           >
             <img
               alt=""
-              className="result_card_tour__img"
+              className="result_card__img"
               src=""
             />
           </picture>,
           <div
-            className="result_card_tour__details col-xs-12 col-sm"
+            className="result_card__details col-xs-12 col-sm"
           >
             <ResultCardTitle
-              title="Tour Title"
+              title="Title"
             />
             <ResultCardDetails
               currency="$"
@@ -170,8 +170,8 @@ ShallowWrapper {
             />
           </div>,
         ],
-        "className": "result_card_tour row",
-        "id": "result-card-tour-id-0",
+        "className": "result_card row",
+        "id": "result-card-id-0",
         "onClick": [MockFunction],
         "onKeyPress": [MockFunction],
         "role": "button",
@@ -186,10 +186,10 @@ ShallowWrapper {
           "props": Object {
             "children": <img
               alt=""
-              className="result_card_tour__img"
+              className="result_card__img"
               src=""
             />,
-            "className": "result_card_tour__picture col-xs-12 col-sm-3",
+            "className": "result_card__picture col-xs-12 col-sm-3",
           },
           "ref": null,
           "rendered": Object {
@@ -198,7 +198,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "alt": "",
-              "className": "result_card_tour__img",
+              "className": "result_card__img",
               "src": "",
             },
             "ref": null,
@@ -214,7 +214,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <ResultCardTitle
-                title="Tour Title"
+                title="Title"
               />,
               <ResultCardDetails
                 currency="$"
@@ -223,7 +223,7 @@ ShallowWrapper {
                 rating={4.8}
               />,
             ],
-            "className": "result_card_tour__details col-xs-12 col-sm",
+            "className": "result_card__details col-xs-12 col-sm",
           },
           "ref": null,
           "rendered": Array [
@@ -232,7 +232,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "function",
               "props": Object {
-                "title": "Tour Title",
+                "title": "Title",
               },
               "ref": null,
               "rendered": null,

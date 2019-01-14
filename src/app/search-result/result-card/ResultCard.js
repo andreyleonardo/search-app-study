@@ -3,23 +3,23 @@ import PropTypes from 'prop-types';
 import ResultCardTitle from './result-card-title/ResultCardTitle';
 import ResultCardDetails from './result-card-details/ResultCardDetails';
 
-import './ResultCardTour.scss';
+import './ResultCard.scss';
 
-const ResultCardTour = ({
+const ResultCard = ({
   index, title, rating, currency, price, isSpecialOffer, onClick, tabIndex, imgSrc, imgAlt
 }) => (
   <div
-    id={`result-card-tour-id-${index}`}
-    className="result_card_tour row"
+    id={`result-card-id-${index}`}
+    className="result_card row"
     role="button"
     onKeyPress={onClick}
     onClick={onClick}
     tabIndex={tabIndex}
   >
-    <picture className="result_card_tour__picture col-xs-12 col-sm-3">
-      <img className="result_card_tour__img" src={imgSrc} alt={imgAlt} />
+    <picture className="result_card__picture col-xs-12 col-sm-3">
+      <img className="result_card__img" src={imgSrc} alt={imgAlt} />
     </picture>
-    <div className="result_card_tour__details col-xs-12 col-sm">
+    <div className="result_card__details col-xs-12 col-sm">
       <ResultCardTitle title={title} />
       <ResultCardDetails
         rating={rating}
@@ -31,7 +31,7 @@ const ResultCardTour = ({
   </div>
 );
 
-ResultCardTour.propTypes = {
+ResultCard.propTypes = {
   title: PropTypes.string.isRequired,
   rating: PropTypes.number,
   currency: PropTypes.string.isRequired,
@@ -44,7 +44,7 @@ ResultCardTour.propTypes = {
   imgSrc: PropTypes.string
 };
 
-ResultCardTour.defaultProps = {
+ResultCard.defaultProps = {
   rating: 0,
   isSpecialOffer: false,
   imgAlt: '',
@@ -52,4 +52,4 @@ ResultCardTour.defaultProps = {
   index: 0
 };
 
-export default ResultCardTour;
+export default ResultCard;

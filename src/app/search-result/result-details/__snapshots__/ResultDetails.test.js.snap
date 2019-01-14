@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Result Details Tour renders without crashing 1`] = `
+exports[`Result Details renders without crashing 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ResultDetailsTour
-    description="Tour Description"
+  Symbol(enzyme.__unrendered__): <ResultDetails
+    description="Result Description"
     expand={false}
     imgAlt=""
     imgSrc="image source"
     index={0}
-    title="Tour title"
+    title="Result title"
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -27,27 +27,27 @@ ShallowWrapper {
       "aria-expanded": false,
       "children": Array [
         <picture
-          className="result_details_tour__picture hidden-xs col-sm-12"
+          className="result_details__picture hidden-xs col-sm-12"
         >
           <img
             alt=""
-            className="result_details_tour__img"
+            className="result_details__img"
             src="image source"
           />
         </picture>,
         <article
-          className="result_details_tour__description col-xs-12"
+          className="result_details__description col-xs-12"
         >
           <h1>
-            Tour title
+            Result title
           </h1>
           <p>
-            Tour Description
+            Result Description
           </p>
         </article>,
       ],
-      "className": "result_details_tour row",
-      "id": "result-details-tour-id-0",
+      "className": "result_details row",
+      "id": "result-details-id-0",
     },
     "ref": null,
     "rendered": Array [
@@ -58,10 +58,10 @@ ShallowWrapper {
         "props": Object {
           "children": <img
             alt=""
-            className="result_details_tour__img"
+            className="result_details__img"
             src="image source"
           />,
-          "className": "result_details_tour__picture hidden-xs col-sm-12",
+          "className": "result_details__picture hidden-xs col-sm-12",
         },
         "ref": null,
         "rendered": Object {
@@ -70,7 +70,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "alt": "",
-            "className": "result_details_tour__img",
+            "className": "result_details__img",
             "src": "image source",
           },
           "ref": null,
@@ -86,13 +86,13 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <h1>
-              Tour title
+              Result title
             </h1>,
             <p>
-              Tour Description
+              Result Description
             </p>,
           ],
-          "className": "result_details_tour__description col-xs-12",
+          "className": "result_details__description col-xs-12",
         },
         "ref": null,
         "rendered": Array [
@@ -101,10 +101,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Tour title",
+              "children": "Result title",
             },
             "ref": null,
-            "rendered": "Tour title",
+            "rendered": "Result title",
             "type": "h1",
           },
           Object {
@@ -112,10 +112,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Tour Description",
+              "children": "Result Description",
             },
             "ref": null,
-            "rendered": "Tour Description",
+            "rendered": "Result Description",
             "type": "p",
           },
         ],
@@ -133,27 +133,27 @@ ShallowWrapper {
         "aria-expanded": false,
         "children": Array [
           <picture
-            className="result_details_tour__picture hidden-xs col-sm-12"
+            className="result_details__picture hidden-xs col-sm-12"
           >
             <img
               alt=""
-              className="result_details_tour__img"
+              className="result_details__img"
               src="image source"
             />
           </picture>,
           <article
-            className="result_details_tour__description col-xs-12"
+            className="result_details__description col-xs-12"
           >
             <h1>
-              Tour title
+              Result title
             </h1>
             <p>
-              Tour Description
+              Result Description
             </p>
           </article>,
         ],
-        "className": "result_details_tour row",
-        "id": "result-details-tour-id-0",
+        "className": "result_details row",
+        "id": "result-details-id-0",
       },
       "ref": null,
       "rendered": Array [
@@ -164,10 +164,10 @@ ShallowWrapper {
           "props": Object {
             "children": <img
               alt=""
-              className="result_details_tour__img"
+              className="result_details__img"
               src="image source"
             />,
-            "className": "result_details_tour__picture hidden-xs col-sm-12",
+            "className": "result_details__picture hidden-xs col-sm-12",
           },
           "ref": null,
           "rendered": Object {
@@ -176,7 +176,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "alt": "",
-              "className": "result_details_tour__img",
+              "className": "result_details__img",
               "src": "image source",
             },
             "ref": null,
@@ -192,13 +192,13 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <h1>
-                Tour title
+                Result title
               </h1>,
               <p>
-                Tour Description
+                Result Description
               </p>,
             ],
-            "className": "result_details_tour__description col-xs-12",
+            "className": "result_details__description col-xs-12",
           },
           "ref": null,
           "rendered": Array [
@@ -207,10 +207,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Tour title",
+                "children": "Result title",
               },
               "ref": null,
-              "rendered": "Tour title",
+              "rendered": "Result title",
               "type": "h1",
             },
             Object {
@@ -218,10 +218,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Tour Description",
+                "children": "Result Description",
               },
               "ref": null,
-              "rendered": "Tour Description",
+              "rendered": "Result Description",
               "type": "p",
             },
           ],

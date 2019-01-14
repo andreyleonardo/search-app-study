@@ -1,13 +1,13 @@
 import React from 'react';
-import ResultCardTour from './ResultCardTour';
+import ResultCard from './ResultCard';
 
-describe('Result Card Tour', () => {
-  let resultCardTour;
+describe('Result Card', () => {
+  let resultCard;
   let props;
 
   beforeEach(() => {
     props = {
-      title: 'Tour Title',
+      title: 'Title',
       currency: '$',
       price: '30',
       rating: 4.8,
@@ -15,15 +15,15 @@ describe('Result Card Tour', () => {
       tabIndex: 1
     };
 
-    resultCardTour = shallow(<ResultCardTour {...props} />);
+    resultCard = shallow(<ResultCard {...props} />);
   });
 
   it('renders without crashing', () => {
-    expect(resultCardTour).toMatchSnapshot();
+    expect(resultCard).toMatchSnapshot();
   });
 
   it('calls onClick when component is clicked', () => {
-    resultCardTour.simulate('click');
+    resultCard.simulate('click');
 
     expect(props.onClick).toHaveBeenCalledTimes(1);
   });

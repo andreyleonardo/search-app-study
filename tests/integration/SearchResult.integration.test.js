@@ -1,7 +1,7 @@
 import React from 'react';
 import SearchResult from '../../src/app/search-result/SearchResult';
 
-describe('App Integration', () => {
+describe('Search Integration', () => {
   let searchResult;
   let props;
 
@@ -11,47 +11,48 @@ describe('App Integration', () => {
         title: 'My Title',
         currency: '$',
         price: '30',
-        rating: '3.0'
+        rating: '3.0',
+        description: 'description'
       }
     };
     searchResult = mountWithIntl(<SearchResult {...props} />);
   });
 
-  it('expands a collpased ResultDetailsTour when ResultCardTour is clicked', () => {
-    expect(searchResult.find('ResultDetailsTour').props().expand).toBeFalsy();
+  it('expands a collpased ResultDetails when ResultCard is clicked', () => {
+    expect(searchResult.find('ResultDetails').props().expand).toBeFalsy();
 
-    searchResult.find('ResultCardTour').simulate('click');
+    searchResult.find('ResultCard').simulate('click');
 
-    expect(searchResult.find('ResultDetailsTour').props().expand).toBeTruthy();
+    expect(searchResult.find('ResultDetails').props().expand).toBeTruthy();
   });
 
-  it('expands a collpased ResultDetailsTour when ResultCardTour is clicked', () => {
+  it('expands a collpased ResultDetails when ResultCard is clicked', () => {
     searchResult.setState({ showDetails: true });
 
-    expect(searchResult.find('ResultDetailsTour').props().expand).toBeTruthy();
+    expect(searchResult.find('ResultDetails').props().expand).toBeTruthy();
 
-    searchResult.find('ResultCardTour').simulate('click');
+    searchResult.find('ResultCard').simulate('click');
 
-    expect(searchResult.find('ResultDetailsTour').props().expand).toBeFalsy();
+    expect(searchResult.find('ResultDetails').props().expand).toBeFalsy();
   });
 
-  it('collapses an expanded ResultDetailsTour when clicked outside', () => {
+  it('collapses an expanded ResultDetails when clicked outside', () => {
     searchResult.setState({ showDetails: true });
 
-    expect(searchResult.find('ResultDetailsTour').props().expand).toBeTruthy();
+    expect(searchResult.find('ResultDetails').props().expand).toBeTruthy();
 
     searchResult.find('OutsideClickHandler').props().onOutsideClick();
     searchResult.update();
 
-    expect(searchResult.find('ResultDetailsTour').props().expand).toBeFalsy();
+    expect(searchResult.find('ResultDetails').props().expand).toBeFalsy();
   });
 
-  it('does not expands a collpased ResultDetailsTour when clicked outside', () => {
-    expect(searchResult.find('ResultDetailsTour').props().expand).toBeFalsy();
+  it('does not expands a collpased ResultDetails when clicked outside', () => {
+    expect(searchResult.find('ResultDetails').props().expand).toBeFalsy();
 
     searchResult.find('OutsideClickHandler').props().onOutsideClick();
     searchResult.update();
 
-    expect(searchResult.find('ResultDetailsTour').props().expand).toBeFalsy();
+    expect(searchResult.find('ResultDetails').props().expand).toBeFalsy();
   });
 });

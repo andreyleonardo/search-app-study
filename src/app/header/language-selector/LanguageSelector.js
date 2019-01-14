@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import OutsideClickHandler from 'react-outside-click-handler';
 import LanguageOptions from './language-options/LanguageOptions';
 
 import './LanguageSelector.scss';
@@ -14,10 +15,18 @@ class LanguageSelector extends Component {
 
     this.onDisplayChange = this.onDisplayChange.bind(this);
     this.handleOnClick = this.handleOnClick.bind(this);
+    this.onOutsideClick = this.onOutsideClick.bind(this);
   }
 
   onDisplayChange() {
     this.setState(state => ({ displayOptions: !state.displayOptions }));
+  }
+
+  onOutsideClick() {
+    const { displayOptions } = this.state;
+    if (displayOptions) {
+      this.setState({ displayOptions: false });
+    }
   }
 
   handleOnClick(language) {
@@ -38,7 +47,9 @@ class LanguageSelector extends Component {
           { !displayOptions ? (
             <button id="language-selector-id" type="button" onClick={this.onDisplayChange}>{ selectedLanguage }</button>
           ) : (
-            <LanguageOptions onClick={this.handleOnClick} />
+            <OutsideClickHandler onOutsideClick={this.onOutsideClick}>
+              <LanguageOptions onClick={this.handleOnClick} />
+            </OutsideClickHandler>
           )}
         </div>
       </div>

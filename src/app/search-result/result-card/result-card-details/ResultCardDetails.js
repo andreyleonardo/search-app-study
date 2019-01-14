@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { FormattedMessage } from 'react-intl';
-import Ratings from '../../../ratings/Ratings';
+import Ratings from './ratings/Ratings';
 
 import './ResultCardDetails.scss';
 

@@ -6,7 +6,7 @@ import SmileIcon from './icons/SmileIcon';
 import NeutralIcon from './icons/NeutralIcon';
 import WonderingIcon from './icons/WonderingIcon';
 import SadIcon from './icons/SadIcon';
-import colors from '../../stylesheets/css/_colors.scss';
+import colors from '../../../../../stylesheets/css/_colors.scss';
 
 import './Ratings.scss';
 

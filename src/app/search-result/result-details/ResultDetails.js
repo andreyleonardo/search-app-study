@@ -3,20 +3,20 @@ import PropTypes from 'prop-types';
 import he from 'he';
 import classnames from 'classnames';
 
-import './ResultDetailsTour.scss';
+import './ResultDetails.scss';
 
-const ResultDetailsTour = ({
+const ResultDetails = ({
   index, description, expand, imgAlt, imgSrc, title
 }) => (
   <div
-    id={`result-details-tour-id-${index}`}
+    id={`result-details-id-${index}`}
     aria-expanded={expand}
-    className={classnames('result_details_tour row', { 'result_details_tour--expanded': expand })}
+    className={classnames('result_details row', { 'result_details--expanded': expand })}
   >
-    <picture className="result_details_tour__picture hidden-xs col-sm-12">
-      <img className="result_details_tour__img" src={imgSrc} alt={imgAlt} />
+    <picture className="result_details__picture hidden-xs col-sm-12">
+      <img className="result_details__img" src={imgSrc} alt={imgAlt} />
     </picture>
-    <article className="result_details_tour__description col-xs-12">
+    <article className="result_details__description col-xs-12">
       <h1>
         {he.decode(title)}
       </h1>
@@ -25,7 +25,7 @@ const ResultDetailsTour = ({
   </div>
 );
 
-ResultDetailsTour.propTypes = {
+ResultDetails.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   expand: PropTypes.bool,
@@ -34,10 +34,10 @@ ResultDetailsTour.propTypes = {
   index: PropTypes.number
 };
 
-ResultDetailsTour.defaultProps = {
+ResultDetails.defaultProps = {
   expand: false,
   imgAlt: '',
   index: 0
 };
 
-export default ResultDetailsTour;
+export default ResultDetails;

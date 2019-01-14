@@ -1,9 +1,9 @@
 const SEARCH_INPUT = '#search-input-id';
 const SEARCH_RESULT = '#search-result-id-';
-const RESULT_CARD = '#result-card-tour-id-';
-const RESULT_DETAILS = '#result-details-tour-id-';
-const RESULT_DETAILS_EXPANDED = '.result_details_tour--expanded';
-const RESULT_DETAILS_IMG = '.result_details_tour__img';
+const RESULT_CARD = '#result-card-id-';
+const RESULT_DETAILS = '#result-details-id-';
+const RESULT_DETAILS_EXPANDED = '.result_details--expanded';
+const RESULT_DETAILS_IMG = '.result_details__img';
 
 const elementPath = {
   searchInput: () => SEARCH_INPUT,
