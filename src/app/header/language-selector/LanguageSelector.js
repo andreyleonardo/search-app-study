@@ -23,10 +23,7 @@ class LanguageSelector extends Component {
   }
 
   onOutsideClick() {
-    const { displayOptions } = this.state;
-    if (displayOptions) {
-      this.setState({ displayOptions: false });
-    }
+    this.setState({ displayOptions: false });
   }
 
   handleOnClick(language) {

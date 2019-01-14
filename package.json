@@ -8,7 +8,8 @@
     "test": "node scripts/test.js",
     "lint": "eslint src",
     "test:functional": "start-server-and-test start http://localhost:3000 test:nightwatch",
-    "test:nightwatch": "nightwatch"
+    "test:nightwatch": "nightwatch",
+    "test:coverage": "node scripts/test.js --coverage"
   },
   "dependencies": {
     "@babel/core": "7.1.6",

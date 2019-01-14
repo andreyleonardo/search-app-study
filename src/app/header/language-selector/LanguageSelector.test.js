@@ -48,4 +48,16 @@ describe('Language Selector', () => {
     expect(languageSelector.exists('#language-selector-id')).toBeTruthy();
     expect(languageSelector.exists('LanguageOptions')).toBeFalsy();
   });
+
+  it('hides language options when clicked outside', () => {
+    languageSelector.setState({ displayOptions: true });
+    languageSelector.update();
+
+    expect(languageSelector.exists('LanguageOptions')).toBeTruthy();
+
+    languageSelector.find('OutsideClickHandler').props().onOutsideClick();
+    languageSelector.update();
+
+    expect(languageSelector.exists('LanguageOptions')).toBeFalsy();
+  });
 });

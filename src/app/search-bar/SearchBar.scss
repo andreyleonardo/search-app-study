@@ -25,7 +25,11 @@
   }
 
   &__label {
+    display: flex;
+    flex-flow: wrap;
     text-align: left;
+    width: 100%;
+    color: white;
   }
 
   &__button {

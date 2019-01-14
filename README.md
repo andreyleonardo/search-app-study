@@ -1,68 +1,108 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# GYG Take Home, Search Application
 
-## Available Scripts
+## About the solution
 
-In the project directory, you can run:
+This app has been build using [ReactJS](https://reactjs.org) and libraries like [Babel](http://babeljs.io) for code compile (some [ECMA](https://www.ecma-international.org/memento/tc39.htm) features not available for browsers), [React-Intl](https://github.com/yahoo/react-intl) for i18n, [Flexboxgrid](https://evgenyrodionov.github.io/flexboxgrid2/) for help with grid system only and [Webpack](http://webpack.js.org) for development boilerplate and build tool.
 
-### `npm start`
+For quality it's using [ESlint](http://eslint.org) with [Airbnb](https://github.com/airbnb/javascript) rules for code style, [Jest](http://jestjs.io/) and [Enzyme](https://github.com/airbnb/enzyme) for unit and integration test and [NightwatchJS](http://nightwatchjs.org) with [Chromedriver](https://www.npmjs.com/package/chromedriver#author) for functional test.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This application does not have an standalone server since wasn't mandatory, I thought to include a [GraphQL](http://graphql.org/) server but I stepped back to keep the enforcement in the frontend app, so the stub data sent for this exercise is hardcoded as a [JSON](https://www.json.org) file being read when the application loads.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+I've included a [lorem ipsum](https://en.wikipedia.org/wiki/Lorem_ipsum) description to the stub data to help to display the 'tour details'.
 
-### `npm test`
+It's a search app that looks at the data for tours that matches with the user input.
+The application has a header with page title and language selection.
+A search bar for user input and it works by typing the query and the results are displayed in real time while the query is being composed.
+The app does not search if a query with less than 3 character is typed.
+The results are displayed in card formats with a picture (it's random copyright free pictures that I got from [LoremPicsum](https://picsum.photos)), title, rating, price and special offer tag when it's present.
+The results are scrollable when it's applied.
+It's possible to click at the results and the card expands to display the tour description.
+There are 2 behaviors for results depending o screen size.
+If it's a desktop size view, a bigger picture will be part of the tour details. If it's a mobile view the picture will not be part to save some screen space and helps the user experience.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+My project architecture uses a domain approach ([DDD](https://en.wikipedia.org/wiki/Domain-driven_design) like) to organizes the components, keeping always the components composition more close than possible and inside the domain that it's part of.
+Every component has it's own test and style (when applicable) to make easier to navigate through the app's files.
 
-### `npm run build`
+For style organization I decided to go with [BEM](http://getbem.com/introduction/) instead of, for example [Atomic](https://github.com/nemophrost/atomic-css), because I've been working with BEM for a while so I feel more comfortable with this methodology. 
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+There's a tests folder where it's kept the integrations, functional test and test utils.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+All other folders are part of [create-react-app](https://github.com/facebook/create-react-app) to run the project.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Requirements
 
-### `npm run eject`
+To have this app up and running you'll need to have [Node](http://nodejs.org) >= 10.5 installed. I strongly recommend you to install [NVM](https://github.com/creationix/nvm) if you already doesn't have it.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+If you already have NVM installed just run:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `nvm install`
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+NVM will get the version set at the `.nvmrc` file, install (globally) and set the Node version locally.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+With Node version set it's time to install the necessary packages from `package.json` file.
+For this will have to run:
+### `npm install`
 
-## Learn More
+In case you, like me, uses `yarn`, just have to execute:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### `yarn`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Running the Application
 
-### Code Splitting
+### `npm start or yarn start`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+The app will be accessible by [http://localhost:3000](http://localhost:3000).
 
-### Analyzing the Bundle Size
+## Running Unit and Integration Tests
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+Unit and integration test are executed together (sorry =/).
+Every component has at least 1 snapshot test and when applicable unit tests to test component behavior.
+There are 2 integration tests, App and SearchResult component, where the whole component is mounted to test the behavior between a set of dependents components.
 
-### Making a Progressive Web App
+So you just have to execute:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+### `npm test or yarn test`
 
-### Advanced Configuration
+This command will execute the tests in `watch` mode, that means any file or test change executes the tests.
+Probably no tests will run here, so you should press `a` to run all tests.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+It's possible to run all tests with coverage report. For this you'll execute:
 
-### Deployment
+### `npm run test:coverage or yarn test:coverage`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+## Running Functional Tests
 
-### `npm run build` fails to minify
+Now the fun part, functional tests!
+I've added a few functional steps to validate the user flow and guarantee that at least the happy path is not broke.
+You'll see 2 user journey here, one with browser in mobile friendly resolution and another one in desktop resolution.
+Both journeys are doing exactly the same steps just a few asserts could be different (like an image that is not present in one or other).
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+These test are setup to run in [Chrome](https://www.google.com/chrome/) only, so if you don't have it, it's a requirement to execute.
+
+To run these tests you'll need to stop Webpack before go ahead.
+
+So if the app is running it's your chance to stop now before proceed...
+
+I'm serious here, I don't want you thinking that my functional tests are not working properly! =~
+
+To execute the tests just run:
+
+### `npm run test:functional or yarn test:functional`
+
+
+## Are you still here?
+
+Ok! Not that it's not an important part but it's probably not the most necessary to have the app running.
+
+There is a last script that you could execute. It's possible to create a production build to deploy it anywhere you want.
+
+For this you just have to execute:
+
+### `npm run build or yarn build`
+
+## Now it's over, I promise!
+
+So, thank you for giving a look at my code and any feedbacks please send me, I'll be glad to receive it.
+
+See ya!
+Thanks!

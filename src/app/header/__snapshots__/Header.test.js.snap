@@ -25,6 +25,7 @@ ShallowWrapper {
       >
         <div
           className="header__title col-xs"
+          id="header-title-id"
         >
           <FormattedMessage
             id="header.title"
@@ -51,6 +52,7 @@ ShallowWrapper {
         "children": Array [
           <div
             className="header__title col-xs"
+            id="header-title-id"
           >
             <FormattedMessage
               id="header.title"
@@ -80,6 +82,7 @@ ShallowWrapper {
               values={Object {}}
             />,
             "className": "header__title col-xs",
+            "id": "header-title-id",
           },
           "ref": null,
           "rendered": Object {
@@ -138,6 +141,7 @@ ShallowWrapper {
         >
           <div
             className="header__title col-xs"
+            id="header-title-id"
           >
             <FormattedMessage
               id="header.title"
@@ -164,6 +168,7 @@ ShallowWrapper {
           "children": Array [
             <div
               className="header__title col-xs"
+              id="header-title-id"
             >
               <FormattedMessage
                 id="header.title"
@@ -193,6 +198,7 @@ ShallowWrapper {
                 values={Object {}}
               />,
               "className": "header__title col-xs",
+              "id": "header-title-id",
             },
             "ref": null,
             "rendered": Object {
