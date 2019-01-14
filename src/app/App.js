@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
+import { IntlProvider } from 'react-intl';
 import { isEmpty } from 'lodash';
 import PropTypes from 'prop-types';
+import i18n from '../i18n';
 import SearchBar from './search-bar/SearchBar';
 import SearchResult from './search-result/SearchResult';
 import stubData from '../data.json';
 import { backgroundImage } from '../pictures';
+import Header from './header/Header';
+import NoResults from './no-results/NoResults';
+
 import './App.scss';
 
 const MIN_QUERY_SIZE = 3;
@@ -15,11 +20,13 @@ class App extends Component {
 
     this.state = {
       query: '',
-      results: []
+      results: [],
+      selectedLanguage: i18n.locale
     };
 
     this.onChange = this.onChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.onChangeLanguage = this.onChangeLanguage.bind(this);
   }
 
   onChange({ target: { value } }) {
@@ -27,6 +34,10 @@ class App extends Component {
 
     this.setState({ query });
     this.handleSubmit({ query });
+  }
+
+  onChangeLanguage(language) {
+    this.setState({ selectedLanguage: language });
   }
 
   handleSubmit(param) {
@@ -45,47 +56,41 @@ class App extends Component {
   }
 
   findTours(query) {
-    const { data: { tours } } = this.props;
+    const {
+      data: { tours }
+    } = this.props;
     return tours.filter(tour => tour.title.toLowerCase().match(query.toLowerCase()));
   }
 
   render() {
-    const { results, query } = this.state;
+    const { results, query, selectedLanguage } = this.state;
 
     return (
-      <div className="app">
-        <header className="app__header">
-          <h1>Experience Finder</h1>
-        </header>
-        <main className="app__main row center-xs">
-          <picture className="app__background">
-            <img className="app__background_image" src={backgroundImage} alt="main section" />
-          </picture>
-          <section className="app__search_bar col-xs-12">
-            <div className="row center-xs">
-              <div className="col-xs-12 col-sm-7">
-                <SearchBar onChange={this.onChange} handleSubmit={this.handleSubmit} />
-              </div>
-            </div>
-          </section>
-          {this.isQueryValid(query) && isEmpty(results) ? (
-            <section className="app__no_results col-xs-12">
-              <p>No results found! =(</p>
-            </section>
-          ) : (
-            <section className="app__search_results col-xs-12">
-              { results.map((result, index) => (
-                <SearchResult
-                  key={result.title}
-                  result={result}
-                  index={index}
-                  tabIndex={index + 1}
-                />
-              )) }
-            </section>
-          )}
-        </main>
-      </div>
+      <IntlProvider locale={selectedLanguage} messages={i18n.getMessagesByLocale(selectedLanguage)}>
+        <div className="app">
+          <Header selectedLanguage={selectedLanguage} onChangeLanguage={this.onChangeLanguage} />
+          <main className="app__main row center-xs">
+            <picture className="app__background">
+              <img className="app__background_image" src={backgroundImage} alt="main section" />
+            </picture>
+            <SearchBar onChange={this.onChange} handleSubmit={this.handleSubmit} />
+            {this.isQueryValid(query) && isEmpty(results) ? (
+              <NoResults />
+            ) : (
+              <section className="app__search_results col-xs-12">
+                {results.map((result, index) => (
+                  <SearchResult
+                    key={result.title}
+                    result={result}
+                    index={index}
+                    tabIndex={index + 1}
+                  />
+                ))}
+              </section>
+            )}
+          </main>
+        </div>
+      </IntlProvider>
     );
   }
 }

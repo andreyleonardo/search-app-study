@@ -29,9 +29,14 @@ ShallowWrapper {
           <Ratings
             rating={4.8}
           >
-            <span>
-              4.8/5
-            </span>
+            <FormattedMessage
+              id="result_card_details.rating"
+              values={
+                Object {
+                  "rating": 4.8,
+                }
+              }
+            />
           </Ratings>
         </div>,
         <div
@@ -40,12 +45,23 @@ ShallowWrapper {
           <span
             className="result_card_details__special_offer"
           >
-            Special Offer
+            <FormattedMessage
+              id="result_card_details.special_offer"
+              values={Object {}}
+            />
           </span>
           <span
             className="result_card_details__price"
           >
-            $30
+            <FormattedMessage
+              id="result_card_details.pricing"
+              values={
+                Object {
+                  "currency": "$",
+                  "price": "30",
+                }
+              }
+            />
           </span>
         </div>,
       ],
@@ -61,9 +77,14 @@ ShallowWrapper {
           "children": <Ratings
             rating={4.8}
           >
-            <span>
-              4.8/5
-            </span>
+            <FormattedMessage
+              id="result_card_details.rating"
+              values={
+                Object {
+                  "rating": 4.8,
+                }
+              }
+            />
           </Ratings>,
           "className": "result_card_details__rating col-xs-4 col-sm",
         },
@@ -73,22 +94,30 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "children": <span>
-              4.8/5
-            </span>,
+            "children": <FormattedMessage
+              id="result_card_details.rating"
+              values={
+                Object {
+                  "rating": 4.8,
+                }
+              }
+            />,
             "rating": 4.8,
           },
           "ref": null,
           "rendered": Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "host",
+            "nodeType": "class",
             "props": Object {
-              "children": "4.8/5",
+              "id": "result_card_details.rating",
+              "values": Object {
+                "rating": 4.8,
+              },
             },
             "ref": null,
-            "rendered": "4.8/5",
-            "type": "span",
+            "rendered": null,
+            "type": [Function],
           },
           "type": [Function],
         },
@@ -103,12 +132,23 @@ ShallowWrapper {
             <span
               className="result_card_details__special_offer"
             >
-              Special Offer
+              <FormattedMessage
+                id="result_card_details.special_offer"
+                values={Object {}}
+              />
             </span>,
             <span
               className="result_card_details__price"
             >
-              $30
+              <FormattedMessage
+                id="result_card_details.pricing"
+                values={
+                  Object {
+                    "currency": "$",
+                    "price": "30",
+                  }
+                }
+              />
             </span>,
           ],
           "className": "result_card_details__pricing col-xs col-sm",
@@ -120,11 +160,25 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Special Offer",
+              "children": <FormattedMessage
+                id="result_card_details.special_offer"
+                values={Object {}}
+              />,
               "className": "result_card_details__special_offer",
             },
             "ref": null,
-            "rendered": "Special Offer",
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "id": "result_card_details.special_offer",
+                "values": Object {},
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
             "type": "span",
           },
           Object {
@@ -132,11 +186,33 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "$30",
+              "children": <FormattedMessage
+                id="result_card_details.pricing"
+                values={
+                  Object {
+                    "currency": "$",
+                    "price": "30",
+                  }
+                }
+              />,
               "className": "result_card_details__price",
             },
             "ref": null,
-            "rendered": "$30",
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "id": "result_card_details.pricing",
+                "values": Object {
+                  "currency": "$",
+                  "price": "30",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
             "type": "span",
           },
         ],
@@ -158,9 +234,14 @@ ShallowWrapper {
             <Ratings
               rating={4.8}
             >
-              <span>
-                4.8/5
-              </span>
+              <FormattedMessage
+                id="result_card_details.rating"
+                values={
+                  Object {
+                    "rating": 4.8,
+                  }
+                }
+              />
             </Ratings>
           </div>,
           <div
@@ -169,12 +250,23 @@ ShallowWrapper {
             <span
               className="result_card_details__special_offer"
             >
-              Special Offer
+              <FormattedMessage
+                id="result_card_details.special_offer"
+                values={Object {}}
+              />
             </span>
             <span
               className="result_card_details__price"
             >
-              $30
+              <FormattedMessage
+                id="result_card_details.pricing"
+                values={
+                  Object {
+                    "currency": "$",
+                    "price": "30",
+                  }
+                }
+              />
             </span>
           </div>,
         ],
@@ -190,9 +282,14 @@ ShallowWrapper {
             "children": <Ratings
               rating={4.8}
             >
-              <span>
-                4.8/5
-              </span>
+              <FormattedMessage
+                id="result_card_details.rating"
+                values={
+                  Object {
+                    "rating": 4.8,
+                  }
+                }
+              />
             </Ratings>,
             "className": "result_card_details__rating col-xs-4 col-sm",
           },
@@ -202,22 +299,30 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "children": <span>
-                4.8/5
-              </span>,
+              "children": <FormattedMessage
+                id="result_card_details.rating"
+                values={
+                  Object {
+                    "rating": 4.8,
+                  }
+                }
+              />,
               "rating": 4.8,
             },
             "ref": null,
             "rendered": Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "host",
+              "nodeType": "class",
               "props": Object {
-                "children": "4.8/5",
+                "id": "result_card_details.rating",
+                "values": Object {
+                  "rating": 4.8,
+                },
               },
               "ref": null,
-              "rendered": "4.8/5",
-              "type": "span",
+              "rendered": null,
+              "type": [Function],
             },
             "type": [Function],
           },
@@ -232,12 +337,23 @@ ShallowWrapper {
               <span
                 className="result_card_details__special_offer"
               >
-                Special Offer
+                <FormattedMessage
+                  id="result_card_details.special_offer"
+                  values={Object {}}
+                />
               </span>,
               <span
                 className="result_card_details__price"
               >
-                $30
+                <FormattedMessage
+                  id="result_card_details.pricing"
+                  values={
+                    Object {
+                      "currency": "$",
+                      "price": "30",
+                    }
+                  }
+                />
               </span>,
             ],
             "className": "result_card_details__pricing col-xs col-sm",
@@ -249,11 +365,25 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Special Offer",
+                "children": <FormattedMessage
+                  id="result_card_details.special_offer"
+                  values={Object {}}
+                />,
                 "className": "result_card_details__special_offer",
               },
               "ref": null,
-              "rendered": "Special Offer",
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "id": "result_card_details.special_offer",
+                  "values": Object {},
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
               "type": "span",
             },
             Object {
@@ -261,11 +391,33 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "$30",
+                "children": <FormattedMessage
+                  id="result_card_details.pricing"
+                  values={
+                    Object {
+                      "currency": "$",
+                      "price": "30",
+                    }
+                  }
+                />,
                 "className": "result_card_details__price",
               },
               "ref": null,
-              "rendered": "$30",
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "id": "result_card_details.pricing",
+                  "values": Object {
+                    "currency": "$",
+                    "price": "30",
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
               "type": "span",
             },
           ],
@@ -324,9 +476,14 @@ ShallowWrapper {
           <Ratings
             rating={4.8}
           >
-            <span>
-              4.8/5
-            </span>
+            <FormattedMessage
+              id="result_card_details.rating"
+              values={
+                Object {
+                  "rating": 4.8,
+                }
+              }
+            />
           </Ratings>
         </div>,
         <div
@@ -335,7 +492,15 @@ ShallowWrapper {
           <span
             className="result_card_details__price"
           >
-            $30
+            <FormattedMessage
+              id="result_card_details.pricing"
+              values={
+                Object {
+                  "currency": "$",
+                  "price": "30",
+                }
+              }
+            />
           </span>
         </div>,
       ],
@@ -351,9 +516,14 @@ ShallowWrapper {
           "children": <Ratings
             rating={4.8}
           >
-            <span>
-              4.8/5
-            </span>
+            <FormattedMessage
+              id="result_card_details.rating"
+              values={
+                Object {
+                  "rating": 4.8,
+                }
+              }
+            />
           </Ratings>,
           "className": "result_card_details__rating col-xs-4 col-sm",
         },
@@ -363,22 +533,30 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "children": <span>
-              4.8/5
-            </span>,
+            "children": <FormattedMessage
+              id="result_card_details.rating"
+              values={
+                Object {
+                  "rating": 4.8,
+                }
+              }
+            />,
             "rating": 4.8,
           },
           "ref": null,
           "rendered": Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "host",
+            "nodeType": "class",
             "props": Object {
-              "children": "4.8/5",
+              "id": "result_card_details.rating",
+              "values": Object {
+                "rating": 4.8,
+              },
             },
             "ref": null,
-            "rendered": "4.8/5",
-            "type": "span",
+            "rendered": null,
+            "type": [Function],
           },
           "type": [Function],
         },
@@ -394,7 +572,15 @@ ShallowWrapper {
             <span
               className="result_card_details__price"
             >
-              $30
+              <FormattedMessage
+                id="result_card_details.pricing"
+                values={
+                  Object {
+                    "currency": "$",
+                    "price": "30",
+                  }
+                }
+              />
             </span>,
           ],
           "className": "result_card_details__pricing col-xs col-sm",
@@ -407,11 +593,33 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "$30",
+              "children": <FormattedMessage
+                id="result_card_details.pricing"
+                values={
+                  Object {
+                    "currency": "$",
+                    "price": "30",
+                  }
+                }
+              />,
               "className": "result_card_details__price",
             },
             "ref": null,
-            "rendered": "$30",
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "id": "result_card_details.pricing",
+                "values": Object {
+                  "currency": "$",
+                  "price": "30",
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
             "type": "span",
           },
         ],
@@ -433,9 +641,14 @@ ShallowWrapper {
             <Ratings
               rating={4.8}
             >
-              <span>
-                4.8/5
-              </span>
+              <FormattedMessage
+                id="result_card_details.rating"
+                values={
+                  Object {
+                    "rating": 4.8,
+                  }
+                }
+              />
             </Ratings>
           </div>,
           <div
@@ -444,7 +657,15 @@ ShallowWrapper {
             <span
               className="result_card_details__price"
             >
-              $30
+              <FormattedMessage
+                id="result_card_details.pricing"
+                values={
+                  Object {
+                    "currency": "$",
+                    "price": "30",
+                  }
+                }
+              />
             </span>
           </div>,
         ],
@@ -460,9 +681,14 @@ ShallowWrapper {
             "children": <Ratings
               rating={4.8}
             >
-              <span>
-                4.8/5
-              </span>
+              <FormattedMessage
+                id="result_card_details.rating"
+                values={
+                  Object {
+                    "rating": 4.8,
+                  }
+                }
+              />
             </Ratings>,
             "className": "result_card_details__rating col-xs-4 col-sm",
           },
@@ -472,22 +698,30 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "children": <span>
-                4.8/5
-              </span>,
+              "children": <FormattedMessage
+                id="result_card_details.rating"
+                values={
+                  Object {
+                    "rating": 4.8,
+                  }
+                }
+              />,
               "rating": 4.8,
             },
             "ref": null,
             "rendered": Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "host",
+              "nodeType": "class",
               "props": Object {
-                "children": "4.8/5",
+                "id": "result_card_details.rating",
+                "values": Object {
+                  "rating": 4.8,
+                },
               },
               "ref": null,
-              "rendered": "4.8/5",
-              "type": "span",
+              "rendered": null,
+              "type": [Function],
             },
             "type": [Function],
           },
@@ -503,7 +737,15 @@ ShallowWrapper {
               <span
                 className="result_card_details__price"
               >
-                $30
+                <FormattedMessage
+                  id="result_card_details.pricing"
+                  values={
+                    Object {
+                      "currency": "$",
+                      "price": "30",
+                    }
+                  }
+                />
               </span>,
             ],
             "className": "result_card_details__pricing col-xs col-sm",
@@ -516,11 +758,33 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "$30",
+                "children": <FormattedMessage
+                  id="result_card_details.pricing"
+                  values={
+                    Object {
+                      "currency": "$",
+                      "price": "30",
+                    }
+                  }
+                />,
                 "className": "result_card_details__price",
               },
               "ref": null,
-              "rendered": "$30",
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "id": "result_card_details.pricing",
+                  "values": Object {
+                    "currency": "$",
+                    "price": "30",
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
               "type": "span",
             },
           ],

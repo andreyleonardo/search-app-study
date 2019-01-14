@@ -1,26 +1,11 @@
 @import "src/stylesheets/css/_screen-sizes";
 .app {
-  text-align: center;
   height: 100%;
   overflow: hidden;
   overflow-y: auto;
 
-  &__header {
-    overflow: hidden;
-    background-color: white;
-    position: fixed;
-    height: 135px;
-    top: 0;
-    width: 100%;
-    justify-content: center;
-
-    @media screen and (max-width: $mobile_max_width) {
-      height: 85px;
-    }
-  }
-
   &__main {
-    margin: 135px 0 50px 0;
+    margin: 90px 0 50px 0;
     @media screen and (max-width: $mobile_max_width) {
       margin: 85px 0 50px 0;
     }
@@ -37,9 +22,5 @@
     object-fit: cover;
     width: 100%;
     height: 100%;
-  }
-
-  &__search_bar {
-    margin-top: 25px;
   }
 }

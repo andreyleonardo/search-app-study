@@ -1,9 +1,13 @@
 @import "src/stylesheets/css/_colors";
 
 .search_bar {
-  display: flex;
-  flex-flow: row wrap;
-  margin-bottom: 20px;
+  margin-top: 25px;
+
+  &__form {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 20px;
+  }
 
   &:after {
     content: "";
@@ -21,7 +25,7 @@
   }
 
   &__label {
-    display: flex;
+    text-align: left;
   }
 
   &__button {

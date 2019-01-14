@@ -14,7 +14,7 @@ describe('App Integration', () => {
         rating: '3.0'
       }
     };
-    searchResult = mount(<SearchResult {...props} />);
+    searchResult = mountWithIntl(<SearchResult {...props} />);
   });
 
   it('expands a collpased ResultDetailsTour when ResultCardTour is clicked', () => {

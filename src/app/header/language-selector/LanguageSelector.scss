@@ -1,0 +1,39 @@
+@import "src/stylesheets/css/_colors";
+
+.language_selector {
+  &__button {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  button {
+    border-radius: 3px;
+    text-transform: uppercase;
+    outline: none;
+    letter-spacing: 0.5px;
+    font-size: 1em;
+    margin: 10px;
+    border: none;
+    background-color: white;
+    font-size: 1em;
+    cursor: pointer;
+    // color: $primary;
+
+    &.primary {
+      background-color: $primary;
+      color: white;
+      &:hover {
+        background-color: $secondary;
+      }
+    }
+
+    &.secondary {
+      background-color: $secondary;
+      color: white;
+
+      &:hover {
+        background-color: $primary;
+      }
+    }
+  }
+}

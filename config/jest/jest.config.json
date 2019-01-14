@@ -6,7 +6,8 @@
   "coveragePathIgnorePatterns": [
     "src/index.js",
     "src/serviceWorker.js",
-    "src/pictures"
+    "src/pictures",
+    "src/i18n"
   ],
   "resolver": "jest-pnp-resolver",
   "setupFiles": [

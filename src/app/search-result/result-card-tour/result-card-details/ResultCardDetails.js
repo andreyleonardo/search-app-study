@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FormattedMessage } from 'react-intl';
 import Ratings from '../../../ratings/Ratings';
 
 import './ResultCardDetails.scss';
@@ -10,12 +11,18 @@ const ResultCardDetails = ({
   <section className="result_card_details row between-xs middle-xs">
     <div className="result_card_details__rating col-xs-4 col-sm">
       <Ratings rating={rating}>
-        <span>{`${rating}/5`}</span>
+        <FormattedMessage id="result_card_details.rating" values={{ rating }} />
       </Ratings>
     </div>
     <div className="result_card_details__pricing col-xs col-sm">
-      {isSpecialOffer && <span className="result_card_details__special_offer">Special Offer</span>}
-      <span className="result_card_details__price">{currency + price}</span>
+      {isSpecialOffer && (
+        <span className="result_card_details__special_offer">
+          <FormattedMessage id="result_card_details.special_offer" />
+        </span>
+      )}
+      <span className="result_card_details__price">
+        <FormattedMessage id="result_card_details.pricing" values={{ currency, price }} />
+      </span>
     </div>
   </section>
 );

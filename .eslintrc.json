@@ -31,6 +31,8 @@
     "beforeAll": true,
     "afterEach": true,
     "afterAll": true,
-    "jest": true
+    "jest": true,
+    "mountWithIntl": true,
+    "shallowWithIntl": true
   }
 }

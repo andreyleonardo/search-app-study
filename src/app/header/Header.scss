@@ -1,0 +1,23 @@
+@import "src/stylesheets/css/_screen-sizes";
+
+.header {
+  overflow: hidden;
+  background-color: white;
+  position: fixed;
+  height: 90px;
+  top: 0;
+  width: 100%;
+
+  @media screen and (max-width: $mobile_max_width) {
+    height: 85px;
+  }
+
+  &__container {
+    margin: 0;
+    padding: 10px;
+  }
+
+  &__title {
+    font-size: 1.5em;
+  }
+}

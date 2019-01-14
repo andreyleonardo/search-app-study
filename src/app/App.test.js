@@ -11,6 +11,6 @@ describe('App', () => {
   it('renders no-results when theres no results for a given query', () => {
     app.setState({ query: 'potato', results: [] });
 
-    expect(app.exists('.app__no_results')).toBeTruthy();
+    expect(app.exists('NoResults')).toBeTruthy();
   });
 });
