@@ -16,5 +16,4 @@ module.exports = (browser) => {
   browser.click(elementPath.resultCard(1));
   browser.expect.element(elementPath.resultDetailsExpanded(0)).to.not.be.present.after(500);
   browser.expect.element(elementPath.resultDetailsExpanded(1)).to.be.present.after(500);
-  browser.end();
 };

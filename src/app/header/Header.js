@@ -8,7 +8,7 @@ import './Header.scss';
 const Header = ({ selectedLanguage, onChangeLanguage }) => (
   <header className="header">
     <div className="header__container row middle-xs">
-      <div className="header__title col-xs">
+      <div id="header-title-id" className="header__title col-xs">
         <FormattedMessage id="header.title" />
       </div>
       <nav className="header__nav_bar col-xs">
