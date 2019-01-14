@@ -45,7 +45,7 @@ ShallowWrapper {
           </button>
         </div>,
       ],
-      "className": "language_selector__languages row center-xs",
+      "className": "language_options row center-xs",
     },
     "ref": null,
     "rendered": Array [
@@ -150,7 +150,7 @@ ShallowWrapper {
             </button>
           </div>,
         ],
-        "className": "language_selector__languages row center-xs",
+        "className": "language_options row center-xs",
       },
       "ref": null,
       "rendered": Array [

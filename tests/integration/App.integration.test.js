@@ -1,6 +1,7 @@
 import React from 'react';
 import App from '../../src/app/App';
 import dataStub from '../../src/data.json';
+import i18n from '../../src/i18n';
 
 describe('App Integration', () => {
   let app;
@@ -73,5 +74,22 @@ describe('App Integration', () => {
     app.find('input#search-input-id').simulate('change', { target: { value: query } });
 
     expect(findToursSpy).toHaveBeenCalledWith(query);
+  });
+
+  it('changes application language', () => {
+    const initialLocale = 'en-US';
+    let messages = i18n.getMessagesByLocale(initialLocale);
+
+    expect(app.state().selectedLanguage).toBe(initialLocale);
+    expect(app.find('Header').text()).toContain(messages['header.title']);
+
+    app.find('LanguageSelector').setState({ displayOptions: true });
+    app.find('LanguageOptions').find('#pt').simulate('click');
+
+    const expectedLocale = 'pt-BR';
+    messages = i18n.getMessagesByLocale(expectedLocale);
+
+    expect(app.state().selectedLanguage).toBe(expectedLocale);
+    expect(app.find('Header').text()).toContain(messages['header.title']);
   });
 });
