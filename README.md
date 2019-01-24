@@ -1,4 +1,4 @@
-# GYG Take Home, Search Application
+# Search Application - Study
 
 ## About the solution
 
@@ -101,8 +101,3 @@ For this you just have to execute:
 ### `npm run build or yarn build`
 
 ## Now it's over, I promise!
-
-So, thank you for giving a look at my code and any feedbacks please send me, I'll be glad to receive it.
-
-See ya!
-Thanks!
