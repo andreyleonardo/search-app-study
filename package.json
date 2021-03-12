@@ -74,7 +74,7 @@
     "jest-pnp-resolver": "1.0.1",
     "jest-resolve": "23.6.0",
     "nightwatch": "^1.0.18",
-    "react-dev-utils": "^7.0.1",
+    "react-dev-utils": "^11.0.4",
     "start-server-and-test": "^1.7.11"
   },
   "browserslist": [
